@@ -1,0 +1,171 @@
+.ManageAttendancePage{
+    width: 100%;
+    display: flex;
+}
+
+.ManageAttendancePage .right-side {
+    width: 100%;
+}
+
+.ManageAttendancePage .right-side h2 {
+    margin-left: 24rem;
+    margin-top: 3rem;
+}
+
+.ManageAttendancePage .right-side .table1{
+    width:80%;
+    margin-left: 7rem;    
+    border-spacing: 4rem;
+    border-collapse: separate;
+}
+
+
+
+.ManageAttendancePage .right-side .table1 tr td:nth-child(1){
+   
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.75rem;
+    width: 40%;
+  
+}
+
+
+.ManageAttendancePage .right-side .table1 tr td:nth-child(1) p:nth-child(1){
+    padding-left: 6rem;
+}
+
+.ManageAttendancePage .right-side .table1 tr td:nth-child(1) p:nth-child(2){
+    padding-left: 10rem;
+}
+
+.ManageAttendancePage .right-side .table1 tr td:nth-child(2){
+  
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    width: 40%;
+    border-radius: 0.75rem;
+}
+
+.ManageAttendancePage .right-side .table1 tr td:nth-child(2) p:nth-child(1){
+    padding-left: 8.5rem;
+}
+
+.ManageAttendancePage .right-side .table1 tr td:nth-child(2) p:nth-child(2){
+    padding-left: 10rem;
+}
+
+.ManageAttendancePage .right-side .table2{
+    margin-left: 11rem;
+}
+
+.ManageAttendancePage .right-side .table2 tr td:nth-child(1){
+    font-size: 1rem;
+    padding-right: 5rem;
+}
+    
+.ManageAttendancePage .right-side .table2 tr td input{
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    width: 15rem;
+    height: 1.5rem;
+    padding:0.1rem;
+    padding-left: 1rem;
+ 
+}
+
+.ManageAttendancePage .right-side .table2 tr td button{
+
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color:#0C8CE9;
+    border: none;
+    border-radius: 0.25rem;
+    margin-left: 3rem;
+}
+
+.ManageAttendancePage .right-side .table2 tr td button:hover{
+    background-color:#0a73be ;
+}
+
+.ManageAttendancePage .right-side .table2 tr td .search .link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ManageAttendancePage .right-side .ptag{
+    font-size: 1.1rem;
+    margin-left: 25rem;
+    margin-top: 3rem;
+}
+
+.ManageAttendancePage .right-side .table3 {
+    width: 50%;
+    font-size: 1.2rem;
+    height: 30%;
+    margin-top: 3rem;
+    
+
+}
+
+.ManageAttendancePage .right-side .table3 tr {
+ font-size: 1rem; 
+
+}
+
+.ManageAttendancePage .right-side .table3 tr th{
+    margin-left: 5rem;
+}
+
+.ManageAttendancePage .right-side .table3 tr th:nth-child(1){
+    padding-left: 5.5rem;
+}
+
+
+.ManageAttendancePage .right-side .table3 tr th:nth-child(2){
+    padding-left: 3rem;
+}
+
+.ManageAttendancePage .right-side .table3 tr th:nth-child(3){
+    padding-left: 4.5rem;
+}
+
+.ManageAttendancePage .right-side .table3 tr td{
+    padding-left: 10rem;
+}
+
+.ManageAttendancePage .right-side .table4 {
+    margin-left: 30rem;
+    width: 33%;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.ManageAttendancePage .right-side .table4 tr td button{
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    background-color:#0C8CE9;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.ManageAttendancePage .right-side .table4 tr td button:hover{
+    background-color:#0a73be ;
+}
+
+.ManageAttendancePage .delete{
+    background-color:#0C8CE9;
+    color: #ffffff;
+    text-decoration: none;
+    
+   
+
+}
+    
+ 

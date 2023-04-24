@@ -1,0 +1,93 @@
+.TaskAllocationPage{
+    width: 100%;
+    display: flex;
+}
+
+.TaskAllocationPage .right-side {
+     width: 100%;
+}
+
+.TaskAllocationPage .right-side h1 {
+    margin-left: 35rem;
+    margin-top: 10rem;
+}
+
+.TaskAllocationPage .right-side p{
+    margin-left: 40rem;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+.TaskAllocationPage .right-side .table1 {
+    width: 35%;
+    margin-left: 28rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 1rem;
+    height: 80%;
+}
+
+ .TaskAllocationPage .right-side .table1 tr:nth-child(1) td{
+    padding-left: 3rem;
+    padding-top: 2rem;
+ }
+
+.TaskAllocationPage .right-side .table1 tr:nth-child(2) td input{
+    width: 25rem;
+    height: 1.35rem;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-left: 3rem;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem
+}
+
+.TaskAllocationPage .right-side .table1 tr:nth-child(3) td{
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+}
+
+.TaskAllocationPage .right-side .table1 tr:nth-child(4) td select{
+    width: 25.8rem;
+    height: 2.25rem;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.TaskAllocationPage .right-side .table1 tr:nth-child(5) td{
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+}
+
+.TaskAllocationPage .right-side .table1 tr:nth-child(6) td input{
+    width: 25rem;
+    height: 1.35rem;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.TaskAllocationPage .right-side .table1 tr:nth-child(7) td button{
+    width: 8rem;
+    height: 2.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color:#0C8CE9;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 12rem;
+    font-size: 0.95rem;
+}
+
+.TaskAllocationPage .right-side .table1 tr:nth-child(7) td button:hover{
+    background-color:#0a73be ;
+}
