@@ -37,7 +37,7 @@ class TableRow extends Component {
                </td>
            
                 <td>
-                   <Link to={"/editOder/"+this.props.obj._id} className="btn btn-success">edit</Link>
+                   {/* <Link to={"/editOder/"+this.props.obj._id} className="btn btn-success">edit</Link> */}
                       &nbsp;
                     <button onClick={this.delete} className="btn btn-danger">Detele</button> 
                     &nbsp;
