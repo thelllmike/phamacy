@@ -78,12 +78,12 @@ export default class Orders extends Component {
 							<tr>
 								<th>Product Name</th>
 								<th>Category</th>
-								<th>pieces</th>
+								{/* <th>pieces</th> */}
 								<th>total</th>
 								<th>Payment</th>
 
 
-								 <th colSpan='3'>Action</th> 
+								 <th colSpan='2'>Action</th> 
 							</tr>
 						</thead>
 						 <tbody>{this.tabRow()}</tbody> 
