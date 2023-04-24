@@ -28,14 +28,14 @@ paymentRoutes.route('/cusgetpayment/:id').get(function (req, res){
 
 });
 
-paymentRoutes.route('/cuseditpayment/:id').get(function (req,res){
+paymentRoutes.route('/edit/:id').get(function (req,res){
     let id = req.params.id;
     Payments.findById(id, function (err,payment){
         res.json(payment);
     });
 });
 
-paymentRoutes.route('/cusupdatepayment/:id').post(function (req,res){
+paymentRoutes.route('/cusupdate/:id').post(function (req,res){
     let id = req.params.id;
     console.log("Edit id " +id)
     Payments.findById(id, function (err, payments){
@@ -49,7 +49,8 @@ paymentRoutes.route('/cusupdatepayment/:id').post(function (req,res){
             payments.cardnumber = req.body.cardnumber;
             payments.date = req.body.date;
             payments.cvv = req.body.cvv;
-            payments.status = "Pendding";
+            payments.status = req.body.status;
+            // payments.status = "Pendding";
 
 
             payments.save().then(payments => {
