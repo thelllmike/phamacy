@@ -1,4 +1,5 @@
 import  React, {Component} from 'react';
+import "../Styles/PaymentPage.css"
 import axios from 'axios'
 
 // import './Styles/cusProfile.css'
@@ -135,47 +136,47 @@ export default  class CusAddPayment extends  Component{
                     <div class="content">
 
                         <br/>
-                        <h3 align="center">Customer Payment Form</h3>
+                        <h2 align="center">Customer Payment Form</h2>
                        
                         <br/> <br/> <br/>
                         <div className="container" style={{marginLeft:300}}>
                         <form onSubmit={this.onSubmit}>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group1">
                                 <label for="inputEmail4">First Name</label>
                                 <input type="text" class="form-control" value={this.state.fname} onChange = {this.onChangeFirstName}/>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group2">
                                 <label for="inputPassword4">Last Name</label>
                                 <input type="text" class="form-control" value={this.state.lname} onChange = {this.onChangeLastName}/>
                                 </div>
                             </div>
 
                             <div class="form-row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group3">
                                 <label for="inputEmail4">Email</label>
                                 <input type="email" class="form-control" value={this.props.match.params.id} onChange = {this.onChangeEmail} readOnly/>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group4">
                                 <label for="inputPassword4">Amount</label>
                                 <input type="number" class="form-control" value={this.state.total} onChange = {this.onChangeAmount}/>
                                 </div>
                             </div>
                             
                             <br/>
-                            <h4 style={{color:'blue'}}>Enter Credit Card Details</h4>
+                            <h4 className='cdetails' style={{color:'blue'}}>Enter Credit Card Details</h4>
                             <br/>
 
-                            <div class="form-group">
+                            <div class="form-group5">
                                 <label for="inputAddress">Card Number</label>
                                 <input type="number" class="form-control" value={this.state.cardnumber} onChange = {this.onChangeCardNumber}/>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group6">
                                 <label for="inputEmail4">End Date</label>
                                 <input type="date" class="form-control" value={this.state.date} onChange = {this.onChangeDate}/>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group7">
                                 <label for="inputPassword4">CVV</label>
                                 <input type="number" class="form-control" value={this.state.cvv} onChange = {this.onChangeCVV}/>
                                 </div>
@@ -185,7 +186,7 @@ export default  class CusAddPayment extends  Component{
                             </form>
 
                             <br/>
-                            <a href = {"/viewpayment/"+this.props.match.params.id} class="btn btn-success">View Payment</a>
+                            <a href = {"/paymentViewtable"} class="btn btn-success">View Payment</a>
                         </div>
                         
                     </div>

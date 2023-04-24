@@ -1,0 +1,110 @@
+.content .container .form-row  {
+   
+    margin-left: 10rem;
+    font-size: 1rem;
+   
+}
+
+
+.content .container .form-row input {
+    outline-style: none;
+    width: 17rem;
+    height: 1rem;
+    padding: 5px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    border-width: 0.1rem;
+    margin-left: 5rem; 
+ 
+}
+
+.content .container .form-row .form-group3 input{
+    margin-left: 7.3rem;
+
+}
+
+.content .container .form-row .form-group4 input{
+    margin-left: 6.1rem;
+ 
+
+
+}
+
+
+   
+.content .container .cdetails{
+    margin-left: 10rem;
+    font-size: 1.2rem;
+    position:absolute;
+    top: 20rem;
+    margin-top: 2.5rem;
+}
+
+  
+.content .container .form-group5{
+    margin-left: 10rem;
+    margin-top: 2rem;
+    
+  
+}
+
+.content .container .form-group5 input{
+    margin-left: 10rem;
+    outline-style: none;
+    width: 17rem;
+    height: 1rem;
+    padding: 5px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    border-width: 0.1rem;
+    margin-left: 3.8rem;   
+}
+
+.content .container .form-group6 input{
+    margin-left: 5.8rem;
+}
+
+.content .container .form-group7 input{
+    margin-left: 7.9rem;
+}
+
+.content .container button{
+
+    width: 5rem;
+    height: 2.1rem;
+    background-color:#0C8CE9;
+    border-style: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin-top: 2.4rem;
+    margin-left: 10rem;
+}
+.content .container button:hover{
+    background-color: #0a73be ;
+}
+
+.content .container a{
+
+    width: 7rem;
+    height: 1.75rem;
+    background-color:#0C8CE9;
+    border-style: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin-left: 31rem;
+    position:absolute;
+    top: 36rem;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 0.4rem;
+}
+
+.content .container a:hover{
+
+    background-color: #0a73be ;
+}
+
