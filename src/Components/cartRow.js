@@ -26,9 +26,9 @@ class TableRow extends Component {
                <td>
                    {this.props.obj.category}
                </td>
-               <td>
+               {/* <td>
                    {this.props.obj.pieces}
-               </td>
+               </td> */}
                <td>
                    {this.props.obj.total}
                </td>
@@ -41,7 +41,7 @@ class TableRow extends Component {
                       &nbsp;
                     <button onClick={this.delete} className="btn btn-danger">Detele</button> 
                     &nbsp;
-                    <button className='payment'><Link to={"/paymentpage/"+this.props.obj._id} className="btn btn-success">Pay</Link></button>
+                    <button className="btn btn-danger"> <Link to={"/paymentpage/"+this.props.obj._id} className="btn btn-success">pay</Link></button> 
                </td>  
            </tr>
         );

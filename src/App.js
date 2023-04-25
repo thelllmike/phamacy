@@ -12,6 +12,7 @@ import ProductHomePage from "./Components/ProductHomePage";
 import AddProdcutForm from "./Components/AddProductForm";
 import EditProductForm from "./Components/EditProductForm";
 import EditTask from "./Components/EditTask";
+import EditPayment from "./Components/EditPayment";
 import editOder from "./Components/editOder";
 import AdminProductTable from "./Components/AdminProductTable";
 import ProductSearch from "./Components/ProductSearch";
@@ -43,6 +44,7 @@ class App extends Component {
 						<Route path='/addproductform' component={AddProdcutForm}/>
 						<Route path='/editproductform/:id' component={EditProductForm}/>
 						<Route path='/EditTask/:id' component={EditTask}/>
+						<Route path='/EditPayment/:id' component={EditPayment}/>
 						<Route path='/editOder/:id' component={editOder}/>
 						<Route path='/AdminProductTable' component={AdminProductTable}/>
 						<Route  path='/ProductSearch/:pathParam1?' component={ProductSearch}/>

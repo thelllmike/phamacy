@@ -154,7 +154,7 @@ export default  class CusAddPayment extends  Component{
 
                             <div class="form-row">
                                 <div class="form-group3">
-                                <label for="inputEmail4">Email</label>
+                                <label for="inputEmail4">ID***</label>
                                 <input type="email" class="form-control" value={this.props.match.params.id} onChange = {this.onChangeEmail} readOnly/>
                                 </div>
                                 <div class="form-group4">
