@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import logo from "../images/logo.png";
-import "../Styles/ProductHomePage.css";
+ import "../Styles/ProductHomePage.css";
 import "../Styles/Header.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ProductTableRow from './ProductClientThrow.js';
  import "../Styles/LeftSidebar.css";
- import "../Styles/VehicleTable.css";
+
 import axios from 'axios';
 import Footer from "../Components/Footer";
 
