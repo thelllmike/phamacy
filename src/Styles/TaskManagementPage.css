@@ -83,12 +83,12 @@
 .TaskManagementPage .right-side .table2 tr td input {
 	font-size: 1rem;
 	border-radius: 0.75rem;
-	width: 20rem;
-	height: 1rem;
+	width: 12rem;
+	height: 1.4rem;
 	padding: 0.2rem;
 	padding-left: 1rem;
 	outline-style: none;
-	border-width: 0.1rem;
+	border: 1px solid #dbd8d8;
 }
 
 .TaskManagementPage .right-side .table2 tr td button {
@@ -103,7 +103,7 @@
 }
 
 .TaskManagementPage .right-side .table2 tr td button:hover {
-	background-color: #0a73be;
+	background-color: #123d5c;
 }
 
 .TaskManagementPage .right-side .table2 tr td .search .link2 {
@@ -127,28 +127,20 @@
 	font-size: 1rem;
 	height: 50%;
 	margin-left: 12rem;
-	margin-top: 4rem;
-    /* background-color: #0a73be; */
+	/* margin-top: 4rem; */
+    background-color: #f4f5f7;
+    padding: 1rem;
+    
 }
 
 .TaskManagementPage .right-side .table3 tr th {
-    text-align: left;
-    /* background-color: aqua; */
+    /* text-align: left; */
+    background-color: rgb(155, 158, 158);
+    padding: 1rem;
 }
 
-.TaskManagementPage .right-side .table3 tr:nth-child(1) th:nth-child(4) {
-	text-align: right;
-	width: 10;
-}
-
-.TaskManagementPage .right-side .table3 tr:nth-child(1) th:nth-child(5) {
-	text-align: right;
-	width: 2%;
-}
-
-.TaskManagementPage .right-side .table3 tr:nth-child(1) th:nth-child(3) {
-	padding-left: 7rem;
-	width: 25%;
+.TaskManagementPage .right-side .table3 th {
+    text-align: center;
 }
 
 .TaskManagementPage .right-side .addtask {
@@ -183,20 +175,6 @@
 	margin-top: 3rem;
 }
 
-.TaskManagementPage .right-side .table4 tr td button {
-	width: 6rem;
-	height: 2rem;
-	font-size: 0.9rem;
-	background-color: #0c8ce9;
-	color: #ffffff;
-	border: none;
-	border-radius: 0.25rem;
-}
-
-.TaskManagementPage .right-side .table4 tr td button:hover {
-	background-color: #0a73be;
-}
-
 .TaskManagementPage .complete {
 	background-color: #0c8ce9;
 	text-decoration: none;
@@ -205,8 +183,31 @@
 	border-radius: 0.25rem;
 	height: 1.5rem;
 	margin-top: 0.25rem;
+    width: 5rem;
+    padding-right: 2rem;
+
 }
 
 .TaskManagementPage .complete:hover {
 	background-color: #0a73be;
+}
+
+.TaskManagementPage .right-side .table4 {
+    width: 20rem;
+}
+
+
+.TaskManagementPage .right-side .table4 tr td:nth-child(1){
+    width: 10rem;
+    /* background-color: #0660a0; */
+}
+.TaskManagementPage .right-side .task-report {
+    width: 6rem;
+	height: 1.8rem;
+	font-size: 0.8rem;
+	color: #ffffff;
+	background-color: #0660a0;
+	border: none;
+	border-radius: 0.25rem;
+	margin-left: 3rem;
 }
