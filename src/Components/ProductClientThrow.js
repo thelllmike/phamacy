@@ -39,7 +39,7 @@ class CPTableRow extends Component {
                    {this.props.obj.description}
                </td>
                 <td>
-                <button><Link to={"/ProductOder/"+this.props.obj._id} className="btn btn-success">Add to cart</Link></button>
+                <button className='btn1'><Link to={"/ProductOder/"+this.props.obj._id} className="cart">Add to cart</Link></button>
                    {/* <Link to={"/ProductOder/"+this.props.obj._id} className="btn btn-success">Buy</Link> */}
                       &nbsp;
                     {/* <button onClick={this.delete} className="btn btn-danger">Add To cart</button>  */}

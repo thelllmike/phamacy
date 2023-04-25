@@ -107,6 +107,12 @@
 .adminVehicleProfile button:nth-child(1):hover {
 	background-color: #ad6d14;
 }
+.adminVehicleProfile .payment:hover{
+	background-color:#c9302c;
+}
+
+
+
 
 
 .adminVehicleProfile button a {
@@ -134,3 +140,6 @@
 	background-color: #0675b6;
 }
 
+.adminVehicleProfile .btnDeleter:hover{
+	background-color:#c9302c;
+}

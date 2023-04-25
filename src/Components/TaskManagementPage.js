@@ -116,7 +116,7 @@ export default class taskHomePage extends Component {
 					</div>
 				</div>
 				<div className='right-side'>
-					<h1>Task Management</h1>
+					<h2>Task Management</h2>
 				<div className='row-frm'>
                     <table className="table1">
                             <tr>

@@ -8,16 +8,43 @@
 	width: 100%;
 }
 
+.ProductHomePage .right-side .checkcart{
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color:#ff0404;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 6rem;
+    margin-left: 60rem;
+}
+
+.ProductHomePage .right-side .checkcart:hover{
+
+ background-color: #eb0000;
+
+}
+.ProductHomePage .right-side .checkcart a{
+   
+     text-decoration: none;
+     color: #ffffff;
+     font-size: 1.15rem;
+
+}
+
+
+
 .ProductHomePage .right-side h2 {
-	margin-left: 30rem;
-	font-size: 1.8rem;
-    margin-top: 10rem;
+	margin-left: 22rem;
+    margin-top: 5rem;
 }
 
 .ProductHomePage .right-side .table1 {
-	width: 75%;
-	margin-left: 12rem;
+	width: 90%;
+	margin-left: 5rem;
 	margin-top: 4rem;
+  
 }
 
 .ProductHomePage .right-side .table1 tr {
@@ -25,25 +52,27 @@
 }
 
 .ProductHomePage .right-side .table1 tr td p {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 450;
 	color: black;
 }
 
 .ProductHomePage .right-side .table1 tr td input[type="text"] {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     border-radius: 0.75rem;
-    width: 20rem;
+    width: 15rem;
     height: 1.5rem;
     padding:0.2rem;
     padding-left: 1rem;
     margin-left: 2rem;
+    outline-style: none;
+    border-width: 0.1rem;
 
 }
 
 .ProductHomePage .right-side .table1 tr td:nth-child(3){
 
-    width:25%;
+    width:20%;
 }
 .ProductHomePage .right-side .table1 tr td button {
 
@@ -54,7 +83,7 @@
     background-color:#0C8CE9;
     border: none;
     border-radius: 0.25rem;
-    margin-left: 3rem;
+
 }
 
 .ProductHomePage .right-side .table1 tr td button:hover {
@@ -68,24 +97,25 @@
 }
 
 .ProductHomePage .right-side .table1 tr td select {
-    width: 15rem;
-    height: 2.5rem;
+    width: 16rem;
+    height: 2rem;
     padding: 5px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     border-radius: 6px;
     padding-left: 0.5rem;
+    outline-style: none;
 }
 
-.ProductHomePage .right-side p.list {
-    margin-left: 38rem;
-    font-size: 1.6rem;
-    margin-top: 5rem;
+.ProductHomePage .right-side .list {
+    margin-left: 30rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
 }
 
 .ProductHomePage .right-side .table2 {
-    margin-left: 5rem;
+    margin-left: 3.5rem;
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 2rem;
 }
 
@@ -104,8 +134,14 @@
     height: 1.8rem;
     border: none;
     border-radius: 5px;
-    color: #ffffff;
     margin: 2%;
+}
+
+.btn1 .cart{
+    text-decoration: none;
+    color: #ffffff;
+   
+    
 }
 
 .ProductHomePage .right-side .table2 tr td button:nth-child(1) {
@@ -114,15 +150,6 @@
 
 .ProductHomePage .right-side .table2 tr td button:nth-child(1):hover {
     background-color: #0a73be;
-}
-
-.ProductHomePage .right-side .table2 tr td button:nth-child(2) {
-    background-color: #E9410C;
-}
-
-.ProductHomePage .right-side .table2 tr td button:nth-child(2):hover {
-    background-color: #d33c0e;
-
 }
 
 .ProductHomePage .right-side .table2{

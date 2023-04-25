@@ -7,86 +7,92 @@
      width: 100%;
 }
 
-.MarkAttendancePage .right-side h1 {
-    margin-left: 32rem;
-    margin-top: 10rem;
+.MarkAttendancePage .right-side h2 {
+    margin-left: 25rem;
+    margin-top: 6rem;
 }
 
 .MarkAttendancePage .right-side p{
-    margin-left: 38rem;
-    margin-top: 3rem;
-    font-size: 1.25rem;
+    margin-left: 28rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .MarkAttendancePage .right-side .table1 {
     width: 35%;
-    margin-left: 28rem;
+    margin-left: 21rem;
     border-style: solid;
     border-width: 0.1rem;
     border-radius: 1rem;
-    height: 80%;
+ 
 }
 
  .MarkAttendancePage .right-side .table1 tr:nth-child(1) td{
-    padding-left: 3rem;
-    padding-top: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
  }
 
 .MarkAttendancePage .right-side .table1 tr:nth-child(2) td input{
-    width: 25rem;
+    width: 22rem;
     height: 1.35rem;
-    padding: 5px;
+    padding: 3px;
     font-size: 1rem;
     border-radius: 6px;
-    margin-left: 3rem;
+    margin-left: 0.5rem;
     padding-left: 0.5rem;
-    margin-top: 0.5rem
+    margin-top: 0.5rem;
+    outline-style: none;
+    border-width: 0.1rem;
 }
 
 .MarkAttendancePage .right-side .table1 tr:nth-child(3) td{
-    padding-left: 3rem;
+    padding-left: 0.5rem;
     padding-top: 0.5rem;
 }
 
 .MarkAttendancePage .right-side .table1 tr:nth-child(4) td input{
-    width: 25rem;
+    width: 22rem;
     height: 1.35rem;
-    padding: 5px;
+    padding: 3px;
     font-size: 1rem;
     border-radius: 6px;
-    margin-left: 3rem;
-    margin-top: 0.5rem;
+    margin-left: 0.5rem;
     padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    outline-style: none;
+    border-width: 0.1rem;
     
 }
 
 .MarkAttendancePage .right-side .table1 tr:nth-child(5) td{
-    padding-left: 3rem;
+    padding-left: 0.5rem;
     padding-top: 0.5rem;
 }
 
 
 .MarkAttendancePage .right-side .table1 tr:nth-child(6) td input{
-    width: 25rem;
+    width: 22rem;
     height: 1.35rem;
-    padding: 5px;
+    padding: 3px;
     font-size: 1rem;
     border-radius: 6px;
-    margin-left: 3rem;
-    margin-top: 0.5rem;
+    margin-left: 0.5rem;
     padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    outline-style: none;
+    border-width: 0.1rem;
 }
 
 .MarkAttendancePage .right-side .table1 tr:nth-child(7) td button{
     width: 8rem;
     height: 2.25rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
     border: none;
     background-color:#0C8CE9;
     color: rgb(255, 255, 255);
     border-radius: 5px;
-    margin-left: 12rem;
+    margin-left: 8rem;
     font-size: 0.95rem;
 }
 

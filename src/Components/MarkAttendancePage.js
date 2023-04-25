@@ -139,7 +139,7 @@ export default class MarkAttendancePage extends Component{
 					</div>
                 </div>
                 <div className="right-side">
-                    <h1>Attendance Management</h1>
+                    <h2>Attendance Management</h2>
                     <form onSubmit={this.onSubmit}>
                     <p>Mark Attendance</p>
                     <table className="table1">

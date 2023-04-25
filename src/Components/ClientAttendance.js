@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../Styles/ManageAttendancePage.css";
+import "../Styles/ClientAttendance.css";
 import "../Styles/Header.css";
 import "../Styles/LeftSidebar.css";
 import axios from 'axios';
@@ -9,7 +9,7 @@ import ACTableRow from "./clientattendanceRow";
 import Footer from "../Components/Footer";
 
 
-export default class ManageAttendancePage extends Component {
+export default class ClientAttendance extends Component {
 
     constructor(props) {
         super(props);
@@ -78,7 +78,7 @@ export default class ManageAttendancePage extends Component {
 
     render() {
         return (
-            <div className='ManageAttendancePage'>
+            <div className='ClientAttendance'>
                 <div className="left-sidebar">
                     <div className='component-name dashboard'>
                         <div className='text'>
@@ -148,8 +148,15 @@ export default class ManageAttendancePage extends Component {
                         </table>
                     </form> */}
 
+                <table className="table2">
+                 <tr ><td>Didn't Mark Attendance Today ?</td>
+                <td><button type="submit" className="search">  <a href={"/markattendance"} className="link2" >Mark Attendance</a></button></td>
+                </tr>
+                </table>
+                
+
                     <p className="ptag">Attendace History</p>
-                    <button type="submit" className="search">  <a href={"/markattendance"} className="link2" >Mark Attendance</a></button>
+                   
                     <table className="table3">
                         <tr>
                             <th>Day</th>

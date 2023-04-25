@@ -99,6 +99,9 @@ export default class ProductHomePage extends Component {
 					</div>
 				</div>
 				<div className='right-side'>
+
+
+				<button type="submit" className="checkcart">  <a href={"/cart"} >Cart</a></button>
 					<h2>Inventory Management</h2>
 
 					<form onSubmit={this.onSubmit}>
@@ -133,7 +136,7 @@ export default class ProductHomePage extends Component {
 						</table>
 					</form>
 
-					<button type="submit" className="search">  <a href={"/cart"} >cart</a></button>
+					
 
 					<p className='list'>Product List</p>
 

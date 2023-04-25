@@ -69,18 +69,20 @@
 .ManageAttendancePage .right-side .table2 tr td input{
     font-size: 1rem;
     border-radius: 0.75rem;
-    width: 15rem;
-    height: 1.5rem;
-    padding:0.1rem;
+    width: 20rem;
+    height: 1rem;
+    padding:0.2rem;
     padding-left: 1rem;
+    outline-style: none;
+    border-width: 0.1rem
  
 }
 
 .ManageAttendancePage .right-side .table2 tr td button{
 
-    width: 7rem;
-    height: 2rem;
-    font-size: 1rem;
+    width: 5rem;
+    height: 1.8rem;
+    font-size: 0.8rem;
     color: #ffffff;
     background-color:#0C8CE9;
     border: none;
@@ -139,15 +141,16 @@
 }
 
 .ManageAttendancePage .right-side .table4 {
-    margin-left: 30rem;
+    margin-left: 15rem;
     width: 33%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 3rem;
+    width: 40%;
 }
 
 .ManageAttendancePage .right-side .table4 tr td button{
-    width: 8rem;
-    height: 2.5rem;
+    width: 7rem;
+    height: 2rem;
     font-size: 0.9rem;
     background-color:#0C8CE9;
     color: #ffffff;
@@ -159,13 +162,20 @@
     background-color:#0a73be ;
 }
 
-.ManageAttendancePage .delete{
+.ManageAttendancePage .Delete{
     background-color:#0C8CE9;
     color: #ffffff;
     text-decoration: none;
-    
-   
-
+    border: none;
+    width: 5rem;
+    height: 1.75rem;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
 }
     
+
+.ManageAttendancePage .Delete:hover{
+
+    background-color:#0a73be ;
+}
  

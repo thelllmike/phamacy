@@ -41,7 +41,7 @@ class TableRow extends Component {
                       &nbsp;
                     <button onClick={this.delete} className="btn btn-danger">Detele</button> 
                     &nbsp;
-                    <Link to={"/paymentpage/"+this.props.obj._id} className="btn btn-success">pay</Link>
+                    <button className='payment'><Link to={"/paymentpage/"+this.props.obj._id} className="btn btn-success">Pay</Link></button>
                </td>  
            </tr>
         );

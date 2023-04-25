@@ -157,7 +157,7 @@ export default class TaskAllocationPage extends Component{
 					</div>
                 </div>
                 <div className="right-side">
-                    <h1>Task Management</h1>
+                    <h2>Task Management</h2>
                     <p>Allocate Task</p>
                     <form onSubmit={this.onSubmit}>
                     <table className="table1">

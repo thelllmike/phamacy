@@ -225,7 +225,7 @@ render() {
                     </tr>
                     <tr>
                          <td>
-                            <button type="submit">Add Product</button>
+                            <button type="submit">Update Product</button>
                         </td>
                     </tr>
                 </table>

@@ -135,7 +135,7 @@ export default class ManageAttendancePage extends Component {
                             <tr>
                                 <td>Search Member name</td>
                                 <td>
-                                    <input type="text" required value={this.state.search} onChange={this.onChangeSearch} />
+                                    <input type="text" placeholder="Search..."  required value={this.state.search} onChange={this.onChangeSearch} />
                                 </td>
                                 <td>
                                     <button type="submit" className="search">

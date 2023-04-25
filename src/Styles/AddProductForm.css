@@ -9,92 +9,98 @@
   }
   
   .AddProductForm .right-side h2 {
-   
-      margin-left: 30rem;
-      font-size: 1.8rem;
-      margin-top: 8rem;
+
+        margin-left: 25rem;
+        margin-top: 6rem;
   }
   
   .AddProductForm .right-side .table{
       margin-left: 10rem;
-      width: 85%;
-      font-size: 1.2rem;
+      width: 75%;
+      font-size: 1rem;
       margin-top: 2rem;
   }
+
   .AddProductForm .right-side .table tr{
       padding: 5rem;
   }
+
   .AddProductForm .right-side .table tr:nth-child(2) td:nth-child(1) select{
-    
-      width: 25.5rem;
-      height: 2.5rem;
+      outline-style: none;
+      width: 18rem;
+      height: 2rem;
       padding: 5px;
-      font-size: 1rem;
+      font-size: 0.85rem;
       border-radius: 6px;
-      margin-top: 0.5rem;
+      margin-top: 0.25rem;
       padding-left: 0.5rem;
+      border-width: 0.1rem;
   }
   
   .AddProductForm .right-side .table tr:nth-child(2) td:nth-child(2) input{
-    
-      width: 25rem;
-      height: 1.35rem;
+      outline-style: none;
+      width: 17rem;
+      height: 1.1rem;
       padding: 5px;
-      font-size: 1rem;
+      font-size: 0.85rem;
       border-radius: 6px;
       padding-left: 0.5rem;
-      margin-top: 0.5rem;
-      
+      margin-top: 0.25rem;
+      border-width: 0.1rem;
   }
   
   .AddProductForm .right-side .table tr:nth-child(3) td{
-    padding-top:0.5rem;
+    padding-top:0.25rem;
   }
   
-  .AddProductForm .right-side .table tr:nth-child(4) td input[type=text]{
-  
-       
-      width: 25rem;
-      height: 1.35rem;
+  .AddProductForm .right-side .table tr:nth-child(4) td input[type=text]{ 
+      width: 17rem;
+      height: 1.1rem;
       padding: 5px;
-      font-size: 1rem;
+      font-size: 0.85rem;
       border-radius: 6px;
-       margin-top: 0.5rem;
+      margin-top: 0.25rem;
+      outline-style: none;
+      border-width: 0.1rem;
   }
   
   .AddProductForm .right-side .table tr:nth-child(5) td{
-      padding-top:0.5rem;
+      padding-top:0.25rem;
   }
   
   .AddProductForm .right-side .table tr:nth-child(6) td input[type=number]{
-  
-      width: 25rem;
-      height: 1.35rem;
+      outline-style: none;
+      width: 17rem;
+      height: 1.1rem;
       padding: 5px;
-      font-size: 1rem;
+      font-size: 0.85rem;
       border-radius: 6px;
       padding-left: 0.5rem;
-      margin-top: 0.5rem;
+      margin-top: 0.25rem;
+      border-width: 0.1rem;
   }
   
   .AddProductForm .right-side .table tr:nth-child(7) td{
-      padding-top:0.5rem;
+      padding-top:0.25rem;
   }
   
   .AddProductForm .right-side .table tr:nth-child(8) td input[type=text]{
-      width: 40rem;
-      height: 10rem;
+      width: 25rem;
       padding: 5px;
-      font-size: 1rem;
+      font-size: 0.85rem;
       border-radius: 6px;
-      margin-top: 0.5rem;
+      margin-top: 0.25rem;
+      padding-left: 0.5rem;
+      height: 1.1rem;
+      outline-style: none;
+      border-width: 0.1rem;
   }
   
   .AddProductForm .right-side .table tr:nth-child(9) td button{
-      width: 6.5rem;
-      height: 2.25rem;
+      width: 6rem;
+      height: 2.1rem;
       padding: 2.5px;
-      font-size: 1rem;
+      font-size: 0.85rem;
       margin-top: 2rem;
       border: none;
       color: rgb(255, 255, 255);
