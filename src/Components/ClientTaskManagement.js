@@ -120,7 +120,7 @@ export default class taskHomePage extends Component {
                             
                         </table>
                         {/* <div className='ProductHomePage'> */}
-                        <p className="ptag">Attendance History</p>
+                        <p className="ptag">staf task</p>
                     
                         <table className='table table-striped table2' style={{ marginTop: 20 }}>
                             <tr>
