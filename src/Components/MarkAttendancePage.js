@@ -4,6 +4,7 @@ import "../Styles/Header.css";
 import "../Styles/LeftSidebar.css";
 import axios from 'axios';
 import Footer from "../Components/Footer";
+import logo from "../images/logo.png";
 
 
 export default class MarkAttendancePage extends Component{

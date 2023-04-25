@@ -7,6 +7,7 @@ import jsPDF from "jspdf";
 import 'jspdf-autotable';
 import AdminAtendaceRow from "./AdminAtendaceRow";
 import Footer from "../Components/Footer";
+import logo from "../images/logo.png";
 
 
 export default class ManageAttendancePage extends Component {
