@@ -1,6 +1,10 @@
 .TaskManagementPage{
     width: 100%;
-    display: flex;
+	display: flex;
+    position: relative;
+min-height: 100vh;
+height: 100%;
+padding-bottom: 10rem;
 }
 
 .TaskManagementPage .right-side {

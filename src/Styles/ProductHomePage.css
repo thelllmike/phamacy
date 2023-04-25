@@ -1,6 +1,10 @@
 .ProductHomePage {
 	width: 100%;
 	display: flex;
+    position: relative;
+min-height: 100vh;
+height: 100%;
+padding-bottom: 8rem;
 }
 
 .ProductHomePage .right-side {

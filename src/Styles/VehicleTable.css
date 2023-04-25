@@ -9,6 +9,8 @@
 	min-height: 100vh;
 	position: relative;
 	background-color: #aaacac33;
+	position: relative;
+    height: 100vh;
 }
 
 .adminVehicleProfile h3 {
