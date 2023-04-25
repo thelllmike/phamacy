@@ -130,7 +130,7 @@ export default  class CusAddPayment extends  Component{
 
     render() {
         return(
-                <div>
+            <div className="MarkAttendancePage">
                    
 
                     <div class="content">

@@ -40,7 +40,7 @@ class App extends Component {
 					<Switch>
 						
 						{/* <Route pat exact ='/Login' component={Login} /> */}
-						<Route path exact='/producthomepage' component={ProductHomePage} />
+						<Route path ='/producthomepage' component={ProductHomePage} />
 						<Route path='/addproductform' component={AddProdcutForm}/>
 						<Route path='/editproductform/:id' component={EditProductForm}/>
 						<Route path='/EditTask/:id' component={EditTask}/>
