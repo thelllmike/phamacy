@@ -1,6 +1,9 @@
 .ClientTaskManagement{
     width: 100%;
     display: flex;
+    position: relative;
+    height: 100vh;
+	padding-bottom: 10rem;
 }
 
 .ClientTaskManagement .right-side {
