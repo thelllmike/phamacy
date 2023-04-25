@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "../images/logo.png";
 import "../Styles/ClientTaskManagement.css";
 import "../Styles/Header.css";
+// import "../Styles/ProductHomePage.css";
 import {BrowserRouter as Router, Link} from "react-router-dom";
  import TableRow from './ClienttaskRow';
 import "../Styles/LeftSidebar.css";
@@ -118,8 +119,10 @@ export default class taskHomePage extends Component {
                             
                             
                         </table>
+                        {/* <div className='ProductHomePage'> */}
                         <p className="ptag">Attendance History</p>
-                         <table className="table3">
+                    
+                        <table className='table table-striped table2' style={{ marginTop: 20 }}>
                             <tr>
                                 <th>Task No</th>
                                 <th>Staff Id</th>
@@ -130,6 +133,7 @@ export default class taskHomePage extends Component {
                             </tr>
                             {this.tabRow()}
                         </table>
+                        {/* </div> */}
                         {/* <button className="addtask" >Add Task</button> */}
                         {/* <button className="addtask" type="submit" >  <a href={"/taskallocationpage"} >Add Task</a></button> */}
                         {/* <table className="table4">

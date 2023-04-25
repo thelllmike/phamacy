@@ -84,7 +84,7 @@ export default class MarkAttendancePage extends Component{
                             
                                     })
                                     console.log(res.data)});
-                            this.props.history.push('/manageattendancepage');
+                            this.props.history.push('/attendence');
                    
                 }
                 else{

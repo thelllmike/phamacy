@@ -7,6 +7,7 @@ import jsPDF from "jspdf";
 import 'jspdf-autotable';
 import ACTableRow from "./clientattendanceRow";
 import Footer from "../Components/Footer";
+import logo from "../images/logo.png";
 
 
 export default class ClientAttendance extends Component {
@@ -79,43 +80,46 @@ export default class ClientAttendance extends Component {
     render() {
         return (
             <div className='ClientAttendance'>
-                <div className="left-sidebar">
-                    <div className='component-name dashboard'>
-                        <div className='text'>
-                            <a href='/dashboard'> Dashboard</a>
-                        </div>
-                    </div>
-                    <div className='component-name farmer'>
-                        <div className='text'>
-                            <a href='/farmer'> Farmer</a>
-                        </div>
-                    </div>
-                    <div className='component-name vendor'>
-                        <div className='text'>
-                            <a href='/vendor'> Vendor</a>
-                        </div>
-                    </div>
-                    <div className='component-name products'>
-                        <div className='text'>
-                            <a href='/product'> Products</a>
-                        </div>
-                    </div>
-                    <div className='component-name clients'>
-                        <div className='text'>
-                            <a href='/client'>Clients</a>{" "}
-                        </div>
-                    </div>
-                    <div className='component-name dashboard'>
-                        <div className='text'>
-                            <a href='/dashboard'> Dashboard</a>
-                        </div>
-                    </div>
-                    <div className='component-name dashboard'>
-                        <div className='text'>
-                            <a href='/dashboard'> Dashboard</a>
-                        </div>
-                    </div>
-                </div>
+              <div className='left-sidebar'>
+					<img src={logo} alt='' className='header-logo' />
+					<div className='component-name dashboard'>
+						<div className='text'>
+							<a href='/producthomepage'>Product</a>
+						</div>
+					</div>
+					<div className='component-name farmer'>
+						<div className='text'>
+							<a href='/farmer'> Attendance</a>
+						</div>
+					</div>
+					<div className='component-name vendor'>
+						<div className='text'>
+							<a href='/vendor'> Payment</a>
+						</div>
+					</div>
+					<div className='component-name products'>
+						<div className='text'>
+							<a href='/product'> Payment History</a>
+						</div>
+					</div>
+					<div className='component-name clients'>
+						<div className='text'>
+							<a href='/client'>Product Admin</a>{" "}
+						</div>
+					</div>
+					<div className='component-name dashboard'>
+						<div className='text'>
+							<a href='/dashboard'>Task</a>
+						</div>
+					</div>
+					<div className='component-name dashboard'>
+						<div className='text'>
+							<a href='/dashboard'> Dashboard</a>
+						</div>
+					</div>
+				</div>
+
+
                 <div className="right-side">
                     <h2>Attendance Management</h2>
                     <table className="table1">

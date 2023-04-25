@@ -153,6 +153,47 @@
 }
 
 
+.ClientTaskManagement .right-side .list {
+    margin-left: 30rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.ClientTaskManagement .right-side .table2 {
+    margin-left: 3.5rem;
+    width: 90%;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.ClientTaskManagement .right-side .table2 tr td{
+    padding-left: 2rem;
+    
+}
+
+.ClientTaskManagement .right-side .table2 input[type=number] {
+    width: 5rem;
+    margin-left: 2rem;
+}
+
+.ClientTaskManagement .right-side .table2 tr td button {
+    width: 6rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.ClientTaskManagement .right-side .table2 tr td button:nth-child(1) {
+    background-color: #0C8CE9;
+}
+
+.ClientTaskManagement .right-side .table2 tr td button:nth-child(1):hover {
+    background-color: #0a73be;
+}
+
+
+
 
     
  
