@@ -43,9 +43,7 @@ class task extends Component {
                <td>
                    {this.props.obj.description}
                </td>
-               <td>
-                   {this.props.obj.email}
-               </td>
+            
                <td>
                    {this.props.obj.status}
                </td>

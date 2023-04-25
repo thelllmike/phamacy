@@ -14,11 +14,13 @@ export default class ManageAttendancePage extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            attendance: [],
-            search: "",
-            email: this.props.match.params.id,
-        };
+        // this.state = {
+        //     attendance: [],
+        //     search: "",
+        //     email: this.props.match.params.id,
+        // };
+
+        this.state = { attendance: [], search: '' };
         // this.state.Station = this.props.match.params.id;
 
         this.onChangeSearch = this.onChangeSearch.bind(this);
@@ -136,10 +138,10 @@ export default class ManageAttendancePage extends Component {
                         <table className="table2">
                             <tr>
                                 <td>Search Member name</td>
-                                <td>
+                                 <td> 
                                     <input type="text" placeholder="Search..."  required value={this.state.search} onChange={this.onChangeSearch} />
                                 </td>
-                                <td>
+                                 <td> 
                                     <button type="submit" className="search">
                                         <a href={"/searchAttendance/" + this.state.search} className="link">Search</a>
                                     </button>
