@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../Styles/TaskAllocationPage.css";
+import logo from "../images/logo.png";
 import "../Styles/Header.css";
 import "../Styles/LeftSidebar.css";
 import axios from 'axios';
@@ -97,30 +98,36 @@ export default class TaskAllocationPage extends Component{
     render(){
         return(
             <div className="TaskAllocationPage">
-                <div className="left-sidebar">
-                    <div className='component-name dashboard'>
+            	<div className='left-sidebar'>
+					<img src={logo} alt='' className='header-logo' />
+					<div className='component-name dashboard'>
 						<div className='text'>
-							<a href='/dashboard'> Dashboard</a>
+							<a href='/producthomepage'>Product</a>
 						</div>
 					</div>
 					<div className='component-name farmer'>
 						<div className='text'>
-							<a href='/farmer'> Farmer</a>
+							<a href='/farmer'> Attendance</a>
 						</div>
 					</div>
 					<div className='component-name vendor'>
 						<div className='text'>
-							<a href='/vendor'> Vendor</a>
+							<a href='/vendor'> Payment</a>
 						</div>
 					</div>
 					<div className='component-name products'>
 						<div className='text'>
-							<a href='/product'> Products</a>
+							<a href='/product'> Payment History</a>
 						</div>
 					</div>
 					<div className='component-name clients'>
 						<div className='text'>
-							<a href='/client'>Clients</a>{" "}
+							<a href='/client'>Product Admin</a>{" "}
+						</div>
+					</div>
+					<div className='component-name dashboard'>
+						<div className='text'>
+							<a href='/dashboard'>Task</a>
 						</div>
 					</div>
 					<div className='component-name dashboard'>
@@ -128,12 +135,7 @@ export default class TaskAllocationPage extends Component{
 							<a href='/dashboard'> Dashboard</a>
 						</div>
 					</div>
-					<div className='component-name dashboard'>
-						<div className='text'>
-							<a href='/dashboard'> Dashboard</a>
-						</div>
-					</div>
-                </div>
+				</div>
                 <div className="right-side">
                     <h2>Task Management</h2>
                     <p>Allocate Task</p>

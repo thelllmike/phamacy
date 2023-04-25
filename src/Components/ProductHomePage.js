@@ -55,43 +55,44 @@ export default class ProductHomePage extends Component {
 	render() {
 		return (
 			<div className='ProductHomePage'>
-<div className="left-sidebar">
-                    <div className='component-name dashboard'>
-                        <div className='text'>
-                            <a href='/dashboard'> Dashboard</a>
-                        </div>
-                    </div>
-                    <div className='component-name farmer'>
-                        <div className='text'>
-                            <a href='/farmer'> Farmer</a>
-                        </div>
-                    </div>
-                    <div className='component-name vendor'>
-                        <div className='text'>
-                            <a href='/vendor'> Vendor</a>
-                        </div>
-                    </div>
-                    <div className='component-name products'>
-                        <div className='text'>
-                            <a href='/product'> Products</a>
-                        </div>
-                    </div>
-                    <div className='component-name clients'>
-                        <div className='text'>
-                            <a href='/client'>Clients</a>{" "}
-                        </div>
-                    </div>
-                    <div className='component-name dashboard'>
-                        <div className='text'>
-                            <a href='/dashboard'> Dashboard</a>
-                        </div>
-                    </div>
-                    <div className='component-name dashboard'>
-                        <div className='text'>
-                            <a href='/dashboard'> Dashboard</a>
-                        </div>
-                    </div>
-                </div>
+	<div className='left-sidebar'>
+					<img src={logo} alt='' className='header-logo' />
+					<div className='component-name dashboard'>
+						<div className='text'>
+							<a href='/producthomepage'>Product</a>
+						</div>
+					</div>
+					<div className='component-name farmer'>
+						<div className='text'>
+							<a href='/farmer'> Attendance</a>
+						</div>
+					</div>
+					<div className='component-name vendor'>
+						<div className='text'>
+							<a href='/vendor'> Payment</a>
+						</div>
+					</div>
+					<div className='component-name products'>
+						<div className='text'>
+							<a href='/product'> Payment History</a>
+						</div>
+					</div>
+					<div className='component-name clients'>
+						<div className='text'>
+							<a href='/client'>Product Admin</a>{" "}
+						</div>
+					</div>
+					<div className='component-name dashboard'>
+						<div className='text'>
+							<a href='/dashboard'>Task</a>
+						</div>
+					</div>
+					<div className='component-name dashboard'>
+						<div className='text'>
+							<a href='/dashboard'> Dashboard</a>
+						</div>
+					</div>
+				</div>
 				<div className='right-side'>
 
 

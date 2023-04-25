@@ -86,27 +86,27 @@ export default class taskHomePage extends Component {
 					</div>
 					<div className='component-name farmer'>
 						<div className='text'>
-							<a href='/farmer'> Farmer</a>
+							<a href='/farmer'> Attendance</a>
 						</div>
 					</div>
 					<div className='component-name vendor'>
 						<div className='text'>
-							<a href='/vendor'> Vendor</a>
+							<a href='/vendor'> Payment</a>
 						</div>
 					</div>
 					<div className='component-name products'>
 						<div className='text'>
-							<a href='/product'> Products</a>
+							<a href='/product'> Payment History</a>
 						</div>
 					</div>
 					<div className='component-name clients'>
 						<div className='text'>
-							<a href='/client'>Clients</a>{" "}
+							<a href='/client'>Product Admin</a>{" "}
 						</div>
 					</div>
 					<div className='component-name dashboard'>
 						<div className='text'>
-							<a href='/dashboard'> Dashboard</a>
+							<a href='/dashboard'>Task</a>
 						</div>
 					</div>
 					<div className='component-name dashboard'>
