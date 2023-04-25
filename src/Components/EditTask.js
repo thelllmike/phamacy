@@ -88,8 +88,8 @@ export default class TaskAllocationPage extends Component{
             if(this.state.taskNo.length > 0){
                 if(this.state.description.length > 5){
                  
-                      
-                            axios.post('http://localhost:4000/attendance/tadd',obj)
+                    axios.post('http://localhost:4000/attendance/tupdate/'+this.props.match.params.id,obj)
+                        
                                 .then(res => {
                                     alert("add Successfully");
                                     this.setState({
