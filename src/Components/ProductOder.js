@@ -108,6 +108,7 @@ import Footer from "../Components/Footer";
 
             if (this.state.qty <= 0) {
                 alert("Out of Stock");
+                
                 this.props.history.push('/producthomepage');
                 window.location.replace('/producthomepage');
             }

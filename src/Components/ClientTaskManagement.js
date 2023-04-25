@@ -116,11 +116,11 @@ export default class taskHomePage extends Component {
                     
                         <table className="table2">
                       
-                            
+                   <h1><p className="ptag">Staff Task</p> </h1>     
                             
                         </table>
                         {/* <div className='ProductHomePage'> */}
-                        <p className="ptag">staf task</p>
+                      
                     
                         <table className='table table-striped table2' style={{ marginTop: 20 }}>
                             <tr>
@@ -129,7 +129,7 @@ export default class taskHomePage extends Component {
                                 <th>Details</th>
                                 <th>Status</th>
                               
-                                <th colSpan='5'>Action</th> 
+                                <th colSpan='2'>Action</th> 
                             </tr>
                             {this.tabRow()}
                         </table>

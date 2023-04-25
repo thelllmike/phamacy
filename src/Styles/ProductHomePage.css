@@ -2,9 +2,9 @@
 	width: 100%;
 	display: flex;
     position: relative;
-min-height: 100vh;
-height: 100%;
-padding-bottom: 15rem;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 15rem;
 }
 
 .ProductHomePage .right-side {

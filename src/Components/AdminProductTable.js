@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import jsPDF from "jspdf";
 import 'jspdf-autotable';
-import "../Styles/VehicleTable.css";
+ import "../Styles/VehicleTable.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import AdminProductTableRow from "./AdminProductTableRow";
 import Footer from "../Components/Footer";
