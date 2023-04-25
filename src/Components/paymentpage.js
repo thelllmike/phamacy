@@ -105,7 +105,7 @@ export default  class CusAddPayment extends  Component{
         };
        
         alert ("Your Email is : "+this.state.email);
-        if(this.state.cvv.length < 4 ){
+        if(this.state.cvv.length === 3 ){
         if(this.state.cardnumber.length > 8){
                             axios.post('http://localhost:4000/payment/cusaddpayment',obj)
                                 .then(res => {
