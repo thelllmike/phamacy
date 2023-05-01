@@ -1,10 +1,26 @@
-.ManageAttendancePage{
-    width: 100%;
-	display: flex;
+.header3{
+    position: relative;  
+    background-color: #0C8CE9;
+    bottom: 1.2rem;
+
+}
+.header3 P{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
     position: relative;
-min-height: 100vh;
-height: 100%;
-padding-bottom: 8rem;
+    top: 0.5rem;
+}
+
+
+.ManageAttendancePage{
+    display: flex;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    height:100% ;
+    padding-bottom: 15rem;
 }
 
 .ManageAttendancePage .right-side {
@@ -13,7 +29,7 @@ padding-bottom: 8rem;
 
 .ManageAttendancePage .right-side h2 {
     margin-left: 24rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .ManageAttendancePage .right-side .table1{
@@ -21,6 +37,9 @@ padding-bottom: 8rem;
     margin-left: 7rem;    
     border-spacing: 4rem;
     border-collapse: separate;
+    cursor: none;
+    font-weight: 500;
+  
 }
 
 
@@ -29,9 +48,11 @@ padding-bottom: 8rem;
    
     font-size: 1rem;
     border-style: solid;
+	box-shadow: 1px 1px 0px 1px #888888;
     border-width: 0.1rem;
     border-radius: 0.75rem;
     width: 40%;
+   
   
 }
 
@@ -45,12 +66,13 @@ padding-bottom: 8rem;
 }
 
 .ManageAttendancePage .right-side .table1 tr td:nth-child(2){
-  
+   
     font-size: 1rem;
     border-style: solid;
     border-width: 0.1rem;
     width: 40%;
     border-radius: 0.75rem;
+    box-shadow: 1px 1px 0px 1px #888888;
 }
 
 .ManageAttendancePage .right-side .table1 tr td:nth-child(2) p:nth-child(1){
@@ -62,36 +84,58 @@ padding-bottom: 8rem;
 }
 
 .ManageAttendancePage .right-side .table2{
-    margin-left: 11rem;
+    width: 75%;
+	margin-left: 12rem;
+	margin-top: 2rem;
 }
 
 .ManageAttendancePage .right-side .table2 tr td:nth-child(1){
     font-size: 1rem;
-    padding-right: 5rem;
+	font-weight: 450;
+	color: black;
+    width: 25%;
+    padding-left: 3rem;
+   
 }
     
+.ManageAttendancePage .right-side .table2 tr td:nth-child(2){
+
+  width: 25%;
+}
+
+.ManageAttendancePage .right-side .table2 tr td:nth-child(3){
+    width: 25%;
+ 
+}
+
 .ManageAttendancePage .right-side .table2 tr td input{
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 0.75rem;
-    width: 20rem;
-    height: 1rem;
+    width: 15rem;
+    height: 1.5rem;
     padding:0.2rem;
     padding-left: 1rem;
+    margin-left: 2rem;
     outline-style: none;
-    border-width: 0.1rem
- 
+    border-width: 0.1rem;
+    
+}
+
+
+.ManageAttendancePage .right-side .table2 tr td input:hover{
+   
+    border-color: #0C8CE9;
 }
 
 .ManageAttendancePage .right-side .table2 tr td button{
 
     width: 5rem;
-    height: 1.8rem;
-    font-size: 0.8rem;
+    height: 1.9rem;
+    font-size: 0.9rem;
     color: #ffffff;
     background-color:#0C8CE9;
     border: none;
-    border-radius: 0.25rem;
-    margin-left: 3rem;
+    border-radius: 0.3rem;
 }
 
 .ManageAttendancePage .right-side .table2 tr td button:hover{
@@ -104,48 +148,67 @@ padding-bottom: 8rem;
 }
 
 .ManageAttendancePage .right-side .ptag{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-left: 25rem;
     margin-top: 3rem;
+  
 }
 
 .ManageAttendancePage .right-side .table3 {
-    width: 50%;
-    font-size: 1.2rem;
-    height: 30%;
+    width: 80%;
+    font-size:  0.93rem;
     margin-top: 3rem;
+    border-collapse: collapse;
+    margin-left: 8rem;
     
 
 }
 
 .ManageAttendancePage .right-side .table3 tr {
- font-size: 1rem; 
+
+    overflow: hidden;
+    white-space: nowrap;
 
 }
 
 .ManageAttendancePage .right-side .table3 tr th{
-    margin-left: 5rem;
+    background-color:#90d1ff;
+    padding-left: 5rem;
+    text-align: justify;
+	border-bottom: 1px solid #bebdbd;
+    height: 40px;
 }
 
 .ManageAttendancePage .right-side .table3 tr th:nth-child(1){
-    padding-left: 5.5rem;
+
+  width: 25%;
 }
 
 
 .ManageAttendancePage .right-side .table3 tr th:nth-child(2){
-    padding-left: 3rem;
+ 
+   width: 25%;
 }
 
 .ManageAttendancePage .right-side .table3 tr th:nth-child(3){
-    padding-left: 4.5rem;
+  
+
+    width: 25%;
 }
 
 .ManageAttendancePage .right-side .table3 tr td{
-    padding-left: 10rem;
+    background-color: #fafafa;
+    padding-left: 5rem;
+	border-bottom: 1px solid #bebdbd;
+    text-align: justify;
+    border-width: 0.1rem;
+    height: 50px;
+    width: 25%;
 }
 
+
 .ManageAttendancePage .right-side .table4 {
-    margin-left: 15rem;
+    margin-left: 20rem;
     width: 33%;
     font-size: 1rem;
     margin-top: 3rem;
@@ -153,13 +216,13 @@ padding-bottom: 8rem;
 }
 
 .ManageAttendancePage .right-side .table4 tr td button{
-    width: 7rem;
-    height: 2rem;
+    width: 7.5rem;
+    height: 1.9rem;
     font-size: 0.9rem;
-    background-color:#0C8CE9;
     color: #ffffff;
+    background-color:#0C8CE9;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 0.3rem;
 }
 
 .ManageAttendancePage .right-side .table4 tr td button:hover{

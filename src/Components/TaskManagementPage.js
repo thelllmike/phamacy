@@ -5,7 +5,6 @@ import "../Styles/Header.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import TableRow from "./taskManagementRow";
 import "../Styles/LeftSidebar.css";
-import "../Styles/VehicleTable.css";
 import axios from "axios";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
@@ -74,6 +73,11 @@ export default class taskHomePage extends Component {
 
 	render() {
 		return (
+			<div className="root">
+				<div className="header4">
+					<p>Manage Task Page</p>
+				</div>
+		
 			<div className='TaskManagementPage'>
 				<div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
@@ -184,8 +188,10 @@ export default class taskHomePage extends Component {
 						</table>
 					</div>
 				</div>
-				<Footer />
+				
 			</div>
+			<Footer />
+		</div>
 		);
 	}
 }

@@ -1,6 +1,28 @@
+.header3{
+    position: relative;  
+    background-color: #0C8CE9;
+    bottom: 1.2rem;
+
+}
+.header3 P{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+
+
+
 .ClientAttendance{
     width: 100%;
     display: flex;
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 15rem;
 }
 
 .ClientAttendance .right-side {
@@ -8,8 +30,8 @@
 }
 
 .ClientAttendance .right-side h2 {
-    margin-left: 24rem;
-    margin-top: 3rem;
+    margin-left: 22rem;
+    margin-top: 1rem;
 }
 
 .ClientAttendance .right-side .table1{
@@ -17,6 +39,8 @@
     margin-left: 7rem;    
     border-spacing: 4rem;
     border-collapse: separate;
+    cursor: none;
+    font-weight: 500;
 }
 
 
@@ -25,6 +49,7 @@
    
     font-size: 1rem;
     border-style: solid;
+	box-shadow: 1px 1px 0px 1px #888888;
     border-width: 0.1rem;
     border-radius: 0.75rem;
     width: 40%;
@@ -47,6 +72,7 @@
     border-width: 0.1rem;
     width: 40%;
     border-radius: 0.75rem;
+    box-shadow: 1px 1px 0px 1px #888888;
 }
 
 .ClientAttendance .right-side .table1 tr td:nth-child(2) p:nth-child(1){
@@ -98,72 +124,64 @@
 }
 
 .ClientAttendance .right-side .ptag{
-    font-size: 1.1rem;
-    margin-left: 25rem;
+    font-size: 1.2rem;
+    margin-left: 27rem;
     margin-top: 3rem;
+   
 }
 
 .ClientAttendance .right-side .table3 {
-    width: 50%;
-    font-size: 1.2rem;
+    width: 75%;
+    font-size:  0.93rem;
     height: 30%;
     margin-top: 3rem;
-    margin-left: 15rem
+    border-collapse: collapse;
+    margin-left: 9rem;
+   
+    
     
 
 }
 
 .ClientAttendance .right-side .table3 tr {
- font-size: 1rem; 
+
+    overflow: hidden;
+    white-space: nowrap;
 
 }
 
 .ClientAttendance .right-side .table3 tr th{
-    margin-left: 5rem;
-}
+    background-color:#90d1ff;
+    padding-left: 6rem;
+    text-align: justify;
+	border-bottom: 1px solid #bebdbd;
+    height: 40px;
+   
 
-.ClientAttendance .right-side .table3 tr th:nth-child(1){
-    padding-left: 5.5rem;
-}
-
-
-.ClientAttendance .right-side .table3 tr th:nth-child(2){
-    padding-left: 3rem;
-}
-
-.ClientAttendance .right-side .table3 tr th:nth-child(3){
-    padding-left: 4.5rem;
 }
 
 .ClientAttendance .right-side .table3 tr td{
-    padding-left: 10rem;
+
+    background-color: #fafafa;
+    padding-left: 6rem;
+	border-bottom: 1px solid #bebdbd;
+    text-align: justify;
+    border-width: 0.1rem;
+    height: 50px;
 }
 
-.ClientAttendance .right-side .table4 {
-    margin-left: 30rem;
-    width: 33%;
-    font-size: 1.2rem;
-    margin-top: 3rem;
-}
 
-.ClientAttendance .right-side .table4 tr td button{
-    width: 8rem;
-    height: 2.5rem;
-    font-size: 0.9rem;
-    background-color:#0C8CE9;
-    color: #ffffff;
-    border: none;
-    border-radius: 0.25rem;
-}
 
-.ClientAttendance .right-side .table4 tr td button:hover{
-    background-color:#0a73be ;
-}
+
 
 .ClientAttendance .delete{
     background-color:#0C8CE9;
     color: #ffffff;
     text-decoration: none;
+    width: 5rem;
+    height: 1.9rem;
+    border: none;
+    border-radius: 5px;
     
 }
 
@@ -193,8 +211,8 @@
 
 .ClientAttendance .delete{
     border: none;
-    width: 4rem;
-    height: 1.5rem;
+    width: 5rem;
+    height: 1.9rem;
 
 }
 

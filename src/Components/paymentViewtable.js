@@ -70,9 +70,13 @@ export default class Payment extends Component {
 
 	render() {
 		return (
+			<div className="root">
+				<div className="header">
+					<p>Manage Payment Page</p>
+				</div>
 			<div className='adminVehicleProfile'>
 			
-				<br /> <h3 align='center'>payment History</h3>
+				<br /> <h3 align='center'>Payment Management</h3>
 				<div className='row-frm'>
 
 				<form onSubmit={this.onSubmit}>
@@ -98,12 +102,12 @@ export default class Payment extends Component {
 						<thead>
 							<tr>
 								<th>First Name</th>
-								<th>Last</th>
-								<th>amount</th>
-								<th>cardnumber</th>
-								<th>date</th>
-								<th>cvv</th>
-								<th>status</th>
+								<th>Last Name</th>
+								<th>Amount</th>
+								<th>Card Number</th>
+								<th>End Date</th>
+								<th>CVV</th>
+								<th>Status</th>
 								
 
 
@@ -121,8 +125,8 @@ export default class Payment extends Component {
 				<div>
 					<hr className='shadow-lg card-footer' />
 				</div>
-			
- <Footer />
+				</div>
+                <Footer />
 			</div>
 		);
 	}

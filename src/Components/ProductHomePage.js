@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import logo from "../images/logo.png";
- import "../Styles/ProductHomePage.css";
+import "../Styles/ProductHomePage.css";
 import "../Styles/Header.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ProductTableRow from './ProductClientThrow.js';
- import "../Styles/LeftSidebar.css";
+import "../Styles/LeftSidebar.css";
 
 import axios from 'axios';
 import Footer from "../Components/Footer";
@@ -54,8 +54,13 @@ export default class ProductHomePage extends Component {
 
 	render() {
 		return (
+			<>
+		<div className="header2">
+			<p>Product Home Page</p>
+		</div>
+	
 			<div className='ProductHomePage'>
-	<div className='left-sidebar'>
+				<div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
 					<div className='component-name dashboard'>
 						<div className='text'>
@@ -96,7 +101,7 @@ export default class ProductHomePage extends Component {
 				<div className='right-side'>
 
 
-				<button type="submit" className="checkcart">  <a href={"/cart"} >Cart</a></button>
+				<button type="submit" className="checkcart">  <a href={"/cart"} ><i class="fa fa-shopping-cart red-color"></i></a></button>
 					<h2>Inventory Management</h2>
 
 					<form onSubmit={this.onSubmit}>
@@ -140,14 +145,15 @@ export default class ProductHomePage extends Component {
 						<table className='table table-striped table2' style={{ marginTop: 20 }}>
 							<thead>
 								<tr>
-									<th>Item name</th>
+									<th>Item Name</th>
 									<th>Item Price</th>
-									<th>Item Catogory</th>
+									<th>Item Category</th>
 									<th>Product No</th>
 									<th>Quantity</th>
 									<th>Description</th>
+									
 
-									<th colSpan='3'></th>
+									<th colSpan='3'>Action</th>
 								</tr>
 							</thead>
 							<tbody>{this.tabRow()}</tbody>
@@ -163,6 +169,7 @@ export default class ProductHomePage extends Component {
 				</div>
 				<Footer />
 			</div>
+			</>
 		);
 	}
 }

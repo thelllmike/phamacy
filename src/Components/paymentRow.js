@@ -47,7 +47,7 @@ class PTableRow extends Component {
                  <td>
                    <button className="btn btn-primary"><Link to={"/EditPayment/"+this.props.obj._id} >edit</Link></button>
                    &nbsp;
-                    <button onClick={this.delete} className="btn btn-danger">Detele</button> 
+                    <button onClick={this.delete} className="payment">Detele</button> 
                  
                     {/* <Link to={"/paymentpage/"+this.props.obj._id} className="btn btn-success">pay</Link> */}
                </td>   *

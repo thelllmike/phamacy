@@ -114,6 +114,11 @@ export default class AddProductForm extends Component{
 
 render() {
     return(
+        <>
+   <div className="header1">
+    <p>Add Product Page</p>
+     </div> 
+		
         <div className='AddProductForm'> 
           	<div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
@@ -227,8 +232,8 @@ render() {
             </div>
            
             <Footer />
-       </div>
-       
+        </div>
+        </>
 );
     }
 }

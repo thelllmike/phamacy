@@ -118,6 +118,12 @@ export default class TaskAllocationPage extends Component{
 
     render(){
         return(
+            <div className="root">
+
+                <div className="header1">
+                    <p>Edit Task Allocation Page</p>
+              
+            </div>
             <div className="TaskAllocationPage">
                 <div className="left-sidebar">
                     <div className='component-name dashboard'>
@@ -202,6 +208,7 @@ export default class TaskAllocationPage extends Component{
                     </form>
                 </div>
                 <Footer />
+                </div>
         </div>
 );
 }

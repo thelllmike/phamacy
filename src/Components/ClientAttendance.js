@@ -10,6 +10,7 @@ import Footer from "../Components/Footer";
 import logo from "../images/logo.png";
 
 
+
 export default class ClientAttendance extends Component {
 
     constructor(props) {
@@ -79,6 +80,11 @@ export default class ClientAttendance extends Component {
 
     render() {
         return (
+        <>
+        <div className="header3">
+            <p>Mark Attendance Management Page</p>
+        </div>
+
             <div className='ClientAttendance'>
               <div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
@@ -121,7 +127,7 @@ export default class ClientAttendance extends Component {
 
 
                 <div className="right-side">
-                    <h2>Attendance Management</h2>
+                    <h2>Mark Attendance Management </h2>
                     <table className="table1">
                         <tr>
                             <td>
@@ -159,13 +165,14 @@ export default class ClientAttendance extends Component {
                 </table>
                 
 
-                    <p className="ptag">Attendace History</p>
+                    <p className="ptag">Attendance History</p>
                    
                     <table className="table3">
                         <tr>
                             <th>Day</th>
                             
                             <th>Attendance</th>
+                            <th>Action</th>
                         </tr>
                         {this.tabRow()}
                     </table>
@@ -173,7 +180,7 @@ export default class ClientAttendance extends Component {
                 </div>
                 <Footer />
             </div>
-
+        </>
         );
     }
 }

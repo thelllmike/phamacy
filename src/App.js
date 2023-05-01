@@ -29,7 +29,8 @@ import cart from "./Components/cart";
 import ProductOder from "./Components/ProductOder";
 import ClientTaskManagement from "./Components/ClientTaskManagement";
  import ClientAttendance from "./Components/ClientAttendance";
-// import Login from "./Components/Login";
+ //import Login from "./Components/Login";
+ import PageNotFound from "./Components/PageNotFound";
 
 class App extends Component {
 	render() {
@@ -62,8 +63,9 @@ class App extends Component {
 						<Route path='/ProductOder/:id' component={ProductOder}/>
 						<Route path='/clienttaskpage' component={ClientTaskManagement}/>
 						<Route path='/attendence' component={ClientAttendance}/>
+						<Route path='/PageNotFound' component={PageNotFound}/>
 
-						<Redirect from='*' to='/404' />
+						<Redirect from='*' to='/PageNotFound' />
 					</Switch>
 				</Router>
 			</div>

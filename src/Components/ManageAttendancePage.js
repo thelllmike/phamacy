@@ -81,6 +81,11 @@ export default class ManageAttendancePage extends Component {
 
     render() {
         return (
+            <div>
+                <div className="header3">
+                    <p>Manage Attendance Page</p>
+                </div>
+          
             <div className='ManageAttendancePage'>
                <div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
@@ -137,7 +142,7 @@ export default class ManageAttendancePage extends Component {
                     <form onSubmit={this.onSubmit}>
                         <table className="table2">
                             <tr>
-                                <td>Search Member name</td>
+                                <td>Search By Member Name</td>
                                  <td> 
                                     <input type="text" placeholder="Search..."  required value={this.state.search} onChange={this.onChangeSearch} />
                                 </td>
@@ -158,6 +163,7 @@ export default class ManageAttendancePage extends Component {
                             <th>Staff Id</th>
                             <th>Name</th>
                             <th>Attendance</th>
+                            <th>Action</th>
                         </tr>
                         {this.tabRow()}
                     </table>
@@ -170,9 +176,10 @@ export default class ManageAttendancePage extends Component {
                         </tr>
                     </table>
                 </div>
-                <Footer />
-
-            </div>
+               
+                <Footer/>
+                </div>
+                </div>
 
         );
     }

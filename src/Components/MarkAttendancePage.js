@@ -101,6 +101,11 @@ export default class MarkAttendancePage extends Component{
 
     render(){
         return(
+            <div className="root"> 
+                <div className="header1">
+                    <p>Mark Attendance Page</p>
+                </div>
+          
             <div className="MarkAttendancePage">
              <div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
@@ -170,9 +175,11 @@ export default class MarkAttendancePage extends Component{
                             </td>
                         </tr>
                     </table> 
-</form>
+                </form>
                 </div>
+                
                 <Footer />  
+               </div>
         </div>
 );
 }

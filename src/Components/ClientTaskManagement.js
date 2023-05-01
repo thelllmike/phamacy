@@ -55,6 +55,10 @@ export default class taskHomePage extends Component {
 
 	render() {
 		return (
+            <>
+            <div className="header4">
+                <p>Staff Tasks Page</p>
+            </div>
 			<div className='ClientTaskManagement'>
 				<div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
@@ -100,11 +104,11 @@ export default class taskHomePage extends Component {
                     <table className="table1">
                             <tr>
                                 <td>
-                                    <p>Today Allocated Task</p>
+                                    <p>Today Allocated Tasks</p>
                                     <p>20</p>
                                  </td>
                                  <td>
-                                    <p>Completed Task</p>
+                                    <p>Completed Tasks</p>
                                     <p>2</p>
                                  </td>
                                  {/* <td>
@@ -116,7 +120,7 @@ export default class taskHomePage extends Component {
                     
                         <table className="table2">
                       
-                   <h1><p className="ptag">Staff Task</p> </h1>     
+                   <h1><p className="ptag">Today Allocated Tasks</p> </h1>     
                             
                         </table>
                         {/* <div className='ProductHomePage'> */}
@@ -156,6 +160,7 @@ export default class taskHomePage extends Component {
 				</div>
                 <Footer />
 			</div>
+        </>
 		);
 	}
 }

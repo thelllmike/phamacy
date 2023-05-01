@@ -137,15 +137,18 @@ export default  class CusAddPayment extends  Component{
 
     render() {
         return(
-                <div>
-                   
+            <div>
+            <div className='header1'>
+               
+                   <p>Edit Payment Page</p>
+                   </div>
 
                     <div class="content">
 
-                        <br/>
+                        
                         <h2 align="center">Customer Payment Form</h2>
                        
-                        <br/> <br/> <br/>
+                          
                         <div className="container" style={{marginLeft:300}}>
                         <form onSubmit={this.onSubmit}>
                             <div class="form-row">
@@ -166,17 +169,17 @@ export default  class CusAddPayment extends  Component{
                                 </div>
                                 <div class="form-group4">
                                 <label for="inputPassword4">Amount</label>
-                                <input type="number" class="form-control" value={this.state.amount} onChange = {this.onChangeAmount}/>
+                                <input type="text" class="form-control" value={this.state.amount} onChange = {this.onChangeAmount}/>
                                 </div>
                             </div>
                             
-                            <br/>
+                            
                             <h4 className='cdetails' style={{color:'blue'}}>Enter Credit Card Details</h4>
-                            <br/>
+                            
 
                             <div class="form-group5">
                                 <label for="inputAddress">Card Number</label>
-                                <input type="number" class="form-control" value={this.state.cardnumber} onChange = {this.onChangeCardNumber}/>
+                                <input type="text" class="form-control" value={this.state.cardnumber} onChange = {this.onChangeCardNumber}/>
                             </div>
                             <div class="form-row">
                                 <div class="form-group6">
@@ -185,19 +188,20 @@ export default  class CusAddPayment extends  Component{
                                 </div>
                                 <div class="form-group7">
                                 <label for="inputPassword4">CVV</label>
-                                <input type="number" class="form-control" value={this.state.cvv} onChange = {this.onChangeCVV}/>
+                                <input type="text" class="form-control" value={this.state.cvv} onChange = {this.onChangeCVV}/>
                                 </div>
                             </div>
-                            
-                            <button type="submit" class="btn btn-primary">Edit </button>
+                        
                             </form>
 
-                            <br/>
-                            <a href = {"/paymentViewtable"} class="btn btn-success">View Payment</a>
+                            
+                            <button type="submit" className='give'>Pay</button>
+                          <button className='view'><a href = {"/paymentViewtable"} class="link1">View Payment</a></button>
+                           
                         </div>
-                        
+                        <Footer />
                     </div>
-                    <Footer />
+                    
                 </div>
         );
     }

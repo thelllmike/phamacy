@@ -132,6 +132,11 @@ import Footer from "../Components/Footer";
 
     render() {
 	return (
+
+        <div className='foo'>
+        <div className='header5'>
+            <p>Edit Order Page</p>
+        </div>
 		<div className='AddVehiclePage'>
 			
 			<div className='content'>
@@ -146,7 +151,7 @@ import Footer from "../Components/Footer";
 					</div>
 
 					<div className='detail'>
-						<label htmlFor=''> category</label>
+						<label htmlFor=''> Category</label>
 						<input type='text' id='vehicleName' name='vehicleName' required readOnly  value={this.state.category} onChange = {this.onChangecategory}/>
 					</div>
 
@@ -159,11 +164,13 @@ import Footer from "../Components/Footer";
 
                    
 
-					<button type='submit'>pay</button>
+					<button type='submit'>Pay</button>
 				</form>
 			</div>
-            <Footer />
+       
 		</div>
+        <Footer/>
+        </div>
 	);
 }  
 	}

@@ -76,6 +76,10 @@ export default class Product extends Component {
 
 	render() {
 		return (
+		<div className="root">
+		<div className="header">
+			<p>Manage Product Page</p>
+		</div>
 			<div className='adminVehicleProfile'>
 			
 				<br /> <h3 align='center'>Product Management</h3>
@@ -106,8 +110,10 @@ export default class Product extends Component {
 					<hr className='shadow-lg card-footer' />
 				</div>
 			
- <Footer />
+			
 			</div>
+			<Footer/>
+		</div>
 		);
 	}
 }

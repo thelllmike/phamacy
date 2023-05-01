@@ -165,6 +165,11 @@ import Footer from "../Components/Footer";
 
     render() {
 	return (
+        <div className='foo'>
+            <div className='header5'>
+                <p>Product Order page</p>
+            </div>
+       
 		<div className='AddVehiclePage'>
 			
 			<div className='content'>
@@ -192,11 +197,13 @@ import Footer from "../Components/Footer";
 
                    
                     {/* <button onClick={this.approve} className="btn btn-danger">Complete</button>  */}
-					<button  type='submit'>add</button>
+					<button  type='submit'>Add</button>
 				</form>
 			</div>
-            <Footer />
+        
 		</div>
+        <Footer />
+    </div>
 	);
 }  
 	}

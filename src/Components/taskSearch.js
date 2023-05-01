@@ -47,40 +47,44 @@ export default class ProductHomePage extends Component {
 
  
 
-
 	render() {
 		return (
-			<div className='ProductHomePage'>
+			<div className="root">
+				<div className="header4">
+					<p>Searched Task Page</p>
+				</div>
+		
+			<div className='TaskManagementPage'>
 				<div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
 					<div className='component-name dashboard'>
 						<div className='text'>
-							<a href='/dashboard'> Dashboard</a>
+							<a href='/producthomepage'>Product</a>
 						</div>
 					</div>
 					<div className='component-name farmer'>
 						<div className='text'>
-							<a href='/farmer'> Farmer</a>
+							<a href='/farmer'> Attendance</a>
 						</div>
 					</div>
 					<div className='component-name vendor'>
 						<div className='text'>
-							<a href='/vendor'> Vendor</a>
+							<a href='/vendor'> Payment</a>
 						</div>
 					</div>
 					<div className='component-name products'>
 						<div className='text'>
-							<a href='/product'> Products</a>
+							<a href='/product'> Payment History</a>
 						</div>
 					</div>
 					<div className='component-name clients'>
 						<div className='text'>
-							<a href='/client'>Clients</a>{" "}
+							<a href='/client'>Product Admin</a>{" "}
 						</div>
 					</div>
 					<div className='component-name dashboard'>
 						<div className='text'>
-							<a href='/dashboard'> Dashboard</a>
+							<a href='/dashboard'>Task</a>
 						</div>
 					</div>
 					<div className='component-name dashboard'>
@@ -90,34 +94,56 @@ export default class ProductHomePage extends Component {
 					</div>
 				</div>
 				<div className='right-side'>
-					<h2>task Search </h2>
-                   
-					<p className='list'></p>
-				
-				  
-					<div className='row-frm '>
-					<table className="table3">
-                            <tr>
-                                <th>Task No</th>
-                                <th>Staff Id</th>
-                                <th>Details</th>
-                                <th>Status</th>
-                              
-                                <th colSpan='5'>Action</th> 
-                            </tr>
-                            {this.tabRow()}
-                        </table>
-					
-				</div>
-                       
+					<h2>Task Management</h2>
+					<div className='row-frm'>
+						<table className='table1'>
+							<tr>
+								<td>
+									<p>Today Allocated Task</p>
+									<p>20</p>
+								</td>
+								<td>
+									<p>Completed Task</p>
+									<p>2</p>
+								</td>
+								<td>
+									<p>Remaining Task</p>
+									<p>18</p>
+								</td>
+							</tr>
+						
+						</table>
+						<p className='ptag'>Today Allocated Tasks for Employees</p>
+						<table className='table3'>
+							<tr>
+								<th>Task No</th>
+								<th>Staff Id</th>
+								<th>Details</th>
+								<th>Status</th>
 
-					
-				
-                     
-                   
+								<th colSpan='5'>Action</th>
+							</tr>
+							{this.tabRow()}
+						</table>
+						{/* <button className="addtask" >Add Task</button> */}
+						<button className='addtask' type='submit'>
+							{" "}
+							<a href={"/taskallocationpage"}>Add Task</a>
+						</button>
+						<table className='table4'>
+							<tr>
+								<td>Generate Task Report</td>
+								<td>
+									<button onClick={() => this.exportPDF()} className="task-report">Task Report</button>
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
-				<Footer />
+				
 			</div>
+			<Footer />
+		</div>
 		);
 	}
 }

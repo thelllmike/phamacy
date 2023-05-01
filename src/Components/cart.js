@@ -69,9 +69,13 @@ export default class Orders extends Component {
 
 	render() {
 		return (
+			<div className="root">
+			 <div className="header">
+				<p>Manage Cart</p>
+			 </div >
 			<div className='adminVehicleProfile'>
 			
-				<br /> <h3 align='center'>cart</h3>
+				<br /> <h3 align='center'>Cart Management</h3>
 				<div className='row-frm'>
 					<table className='table table-striped' style={{ marginTop: 20 }}>
 						<thead>
@@ -96,6 +100,7 @@ export default class Orders extends Component {
 				<br />
 				<div>
 					<hr className='shadow-lg card-footer' />
+				</div>
 				</div>
 				<Footer />
 			</div>

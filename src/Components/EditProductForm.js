@@ -133,6 +133,11 @@ export default class EditProductForm extends Component{
 
 render() {
     return(
+        <div className="root"> 
+            <div className="headerEditProduct">
+                <p>Edit Product Page</p>
+            </div>
+       
         <div className='EditProductForm'> 
             <div className='left-sidebar'>
                 <div className='component-name dashboard'>
@@ -231,7 +236,9 @@ render() {
                 </table>
                 </form>
             </div>
-            <Footer />
+            
+            <Footer/>
+            </div>
        </div>
 );
     }

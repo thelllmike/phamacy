@@ -50,6 +50,11 @@ export default class ProductHomePage extends Component {
 
 	render() {
 		return (
+			<div>
+				<div className="header1">
+					<p> Searched Product Page</p>
+				</div>
+			
 			<div className='ProductHomePage'>
 				<div className='left-sidebar'>
 					<img src={logo} alt='' className='header-logo' />
@@ -99,14 +104,14 @@ export default class ProductHomePage extends Component {
 					<table className='table table-striped table2' style={{ marginTop: 20 }}>
 						<thead>
 							<tr>
-								<th>Item name</th>
+								<th>Item Name</th>
 								<th>Item Price</th>
-								<th>Item Catogory</th>
+								<th>Item Category</th>
 								<th>Product No</th>
 								<th>Quantity</th>
 								<th>Description</th>
 
-								<th colSpan='3'></th>
+								<th colSpan='3'>Action</th>
 							</tr>
 						</thead>
 						<tbody>{this.tabRow()}</tbody>
@@ -117,6 +122,7 @@ export default class ProductHomePage extends Component {
                    
 				</div>
 				<Footer />
+			</div>
 			</div>
 		);
 	}

@@ -1,17 +1,36 @@
+.root {
+
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 15rem;
+	height:100% ;
+}
+
+
+.header{
+    position: relative;  
+    background-color: #0C8CE9;
+    bottom: 1.2rem;
+
+}
+.header p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    position: relative;
+	top: 0.5rem;
+}
+
 .adminVehicleProfile {
 	display: flex;
 	flex-direction: column;
-	position: absolute;
 	width: 100%;
-	height: 100%;
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-	min-height: 100vh;
-	position: relative;
+    position: relative;
 	background-color: #aaacac33;
-	position: relative;
-    height: 100vh;
-	padding-bottom: 15rem;
+	top: -2.4rem
+	
+
 }
 
 .adminVehicleProfile h3 {
@@ -130,6 +149,11 @@
 	border-radius: 30px;
 	border: 1px solid #000000;
 	margin-right: 2%;
+	outline-style: none;
+}
+
+.adminVehicleProfile input:hover {
+     border-color: #0C8CE9;
 }
 
 .adminVehicleProfile button:nth-child(3) {

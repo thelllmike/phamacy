@@ -71,9 +71,14 @@ export default class Payment extends Component {
 
 	render() {
 		return (
+			<div >
+				<div className="header">
+					<p>Payment History Page</p>
+				</div>
+		
 			<div className='adminVehicleProfile'>
 			
-				<br /> <h3 align='center'>payment History</h3>
+				<br /> <h3 align='center'>Payment History</h3>
 				<div className='row-frm'>
 					<table className='table table-striped' style={{ marginTop: 20 }}>
 						<thead>
@@ -98,6 +103,7 @@ export default class Payment extends Component {
 				<br />
 				<div>
 					<hr className='shadow-lg card-footer' />
+				</div>
 				</div>
 				<Footer />
 			</div>
