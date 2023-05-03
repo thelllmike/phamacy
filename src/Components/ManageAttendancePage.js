@@ -139,7 +139,7 @@ export default class ManageAttendancePage extends Component {
                             </td>
                         </tr>
                     </table>
-                    <form onSubmit={this.onSubmit}>
+                    {/* <form onSubmit={this.onSubmit}>
                         <table className="table2">
                             <tr>
                                 <td>Search By Member Name</td>
@@ -155,7 +155,26 @@ export default class ManageAttendancePage extends Component {
                             </tr>
 
                         </table>
-                    </form>
+                    </form> */}
+
+                    
+					<form onSubmit={this.onSubmit}>
+						<table className='table2'>
+							<tr>
+								<td>
+									<p>Search by name</p>
+								</td>
+								<td>
+									<input type='text' placeholder='search...' required value={this.state.search} onChange={this.onChangeSearch} />
+								</td>
+								<td>
+									<button type="submit" className="search">  <a href={"/searchAttendance/" + this.state.search} className="link2" >Search</a></button>
+								</td>
+							
+							</tr>
+						</table>
+					</form>
+
 
                     <p className="ptag">Today Attendance of Staff Members</p>
                     <table className="table3">

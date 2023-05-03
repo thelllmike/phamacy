@@ -62,7 +62,7 @@ attendanceRoutes.route('/search/:pathParam1?').get(function (req, res){
     console.log("your search is "+search);
 
     // Orders.find({$and:[{date : search},{email : email}]},function (err,srch){
-        Attendance.find({$and:[{$or: [{staffid: search}, {name: search},{day: search},{qty: search}]}]},function (err,srch){ 
+        Attendance.find({$and:[{$or: [{staffid: search}, {name: search}]}]},function (err,srch){ 
         if(err)
             console.log(err);
         else{
