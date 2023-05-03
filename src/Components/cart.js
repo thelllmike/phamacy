@@ -84,7 +84,7 @@ export default class Orders extends Component {
 								<th>Category</th>
 								{/* <th>pieces</th> */}
 								<th>total</th>
-								<th>Payment</th>
+							
 
 
 								 <th colSpan='2'>Action</th> 

@@ -17,8 +17,8 @@ import editOder from "./Components/editOder";
 import AdminProductTable from "./Components/AdminProductTable";
 import ProductSearch from "./Components/ProductSearch";
 import searchAttendance from "./Components/searchAttendance";
+import paymentSearch from "./Components/paymentSearch";
 import taskSearch from "./Components/taskSearch";
-import searchpayment from "./Components/searchpayment";
 import ManageAttendancePage from "./Components/ManageAttendancePage";
 import MarkAttendancePage from "./Components/MarkAttendancePage";
 import TaskAllocationPage from "./Components/TaskAllocationPage";
@@ -51,7 +51,8 @@ class App extends Component {
 						<Route  path='/ProductSearch/:pathParam1?' component={ProductSearch}/>
 						<Route  path='/searchAttendance/:pathParam1?' component={searchAttendance}/>
 						<Route  path='/taskSearch/:pathParam1?' component={taskSearch}/>
-						<Route  path='/searchpayment/:pathParam1?' component={searchpayment}/>
+						<Route  path='/paymentSearch/:pathParam1?' component={paymentSearch}/>
+						
 
 						<Route path='/manageattendancepage' component={ManageAttendancePage}/>
 						<Route path='/markattendance' component={MarkAttendancePage}/>
@@ -63,9 +64,9 @@ class App extends Component {
 						<Route path='/ProductOder/:id' component={ProductOder}/>
 						<Route path='/clienttaskpage' component={ClientTaskManagement}/>
 						<Route path='/attendence' component={ClientAttendance}/>
-						<Route path='/PageNotFound' component={PageNotFound}/>
+						{/* <Route path='/PageNotFound' component={PageNotFound}/>
 
-						<Redirect from='*' to='/PageNotFound' />
+						<Redirect from='*' to='/PageNotFound' /> */}
 					</Switch>
 				</Router>
 			</div>

@@ -109,8 +109,8 @@ import Footer from "../Components/Footer";
             if (this.state.qty <= 0) {
                 alert("Out of Stock");
                 
-                this.props.history.push('/producthomepage');
-                window.location.replace('/producthomepage');
+                this.props.history.push('/');
+                window.location.replace('/');
             }
             else{
                 alert("avalablestock " +avalablestock);
@@ -147,8 +147,8 @@ import Footer from "../Components/Footer";
                             
                                     })
                                     console.log(res.data)});
-                            this.props.history.push('/producthomepage');
-                            window.location.replace('/producthomepage');
+                            this.props.history.push('/');
+                            window.location.replace('/');
 
                         
                         

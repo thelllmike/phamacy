@@ -69,22 +69,22 @@ export default class ProductHomePage extends Component {
 					</div>
 					<div className='component-name farmer'>
 						<div className='text'>
-							<a href='/farmer'> Attendance</a>
+							<a href='/manageattendancepage'> Attendance</a>
 						</div>
 					</div>
 					<div className='component-name vendor'>
 						<div className='text'>
-							<a href='/vendor'> Payment</a>
+							<a href='/'> Payment</a>
 						</div>
 					</div>
 					<div className='component-name products'>
 						<div className='text'>
-							<a href='/product'> Payment History</a>
+							<a href='/paymentViewtable'> Payment History</a>
 						</div>
 					</div>
 					<div className='component-name clients'>
 						<div className='text'>
-							<a href='/client'>Product Admin</a>{" "}
+							<a href='/AdminProductTable'>Product Admin</a>{" "}
 						</div>
 					</div>
 					<div className='component-name dashboard'>

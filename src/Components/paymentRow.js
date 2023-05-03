@@ -34,12 +34,8 @@ class PTableRow extends Component {
                <td>
                    {this.props.obj.cardnumber}
                </td>
-               <td>
-                   {this.props.obj.date}
-               </td>
-               <td>
-                   {this.props.obj.cvv}
-               </td>
+              
+              
                <td>
                    {this.props.obj.status}
                </td>

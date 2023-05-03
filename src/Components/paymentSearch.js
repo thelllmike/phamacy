@@ -5,20 +5,14 @@ import jsPDF from "jspdf";
 import 'jspdf-autotable';
 import "../Styles/VehicleTable.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import PTableRow from "./paymentRow";
+import TableRowsearch from "./paymentRow";
 import Footer from "../Components/Footer";
 
 
-export default class Payment extends Component {
+export default class Paymentsearch extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			payment: [],
-			search: "",
-			// email: this.props.match.params.id,
-		};
-		// this.state.Station = this.props.match.params.id;
-
+        this.state = { paymentSearch: [] };
 		this.onChangeSearch = this.onChangeSearch.bind(this);
 	}
 
@@ -30,11 +24,11 @@ export default class Payment extends Component {
 
 	componentDidMount() {
 		
-		axios.get('http://localhost:4000/payment/getall/')
+        axios.get('http://localhost:4000/payment/search/'+this.props.match.params.pathParam1)
 			.then((response) => {
 				// alert('Pass una')
 
-				this.setState({ payment: response.data });
+				this.setState({ paymentSearch: response.data });
 			})
 			.catch(function (error) {
 				console.log(error);
@@ -42,8 +36,8 @@ export default class Payment extends Component {
 	}
 
 	tabRow() {
-		return this.state.payment.map(function (object, i) {
-			return <PTableRow obj={object} key={i} />;
+		return this.state.paymentSearch.map(function (object, i) {
+			return <TableRowsearch obj={object} key={i} />;
 		});
 		
 	}
@@ -57,7 +51,7 @@ export default class Payment extends Component {
          doc.setFontSize(15);
          const title = "My Oder Report";
          const headers = [["fname", "lname", "amount","cardnumber","date","status"]];
-         const data = this.state.payment.map(elt=> [elt.fname, elt.lname,  elt.amount,elt.cardnumber, elt.date, elt.status]);
+         const data = this.state.paymentSearch.map(elt=> [elt.fname, elt.lname,  elt.amount,elt.cardnumber, elt.date, elt.status]);
          let content = {
            startY: 50,
            head: headers,
@@ -83,15 +77,13 @@ export default class Payment extends Component {
                         <table className="table2">
                         <tr> 
                                
-                                <td> 
+                                 <td> 
                                     <input type="text" placeholder="Search..." required value={this.state.search} onChange={this.onChangeSearch} />
-                                </td>
+                                </td> 
                                 <td> 
-                                    {/* <button type="submit" className="search"> 
+                                    <button type="submit" className="search"> 
                                     <a href={"/paymentSearch/" + this.state.search} className="link2" >Search</a>
-                                    </button> */}
-
-									<button type="submit" className="search">  <a href={"/paymentSearch/" + this.state.search} className="link2" >Search</a></button>
+                                    </button>
                                 </td>
                            
                             </tr>

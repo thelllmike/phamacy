@@ -93,7 +93,7 @@ export default class AddProductForm extends Component{
                             
                                     })
                                     console.log(res.data)});
-                            this.props.history.push('/producthomepage');
+                            this.props.history.push('/');
                         
                     } 
                     else {

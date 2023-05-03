@@ -112,7 +112,7 @@ export default class EditProductForm extends Component{
                             
                                     })
                                     console.log(res.data)});
-                            this.props.history.push('/producthomepage');
+                            this.props.history.push('/AdminProductTable');
                         
                     } 
                     else {

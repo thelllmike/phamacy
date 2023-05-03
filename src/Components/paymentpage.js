@@ -121,7 +121,7 @@ export default  class CusAddPayment extends  Component{
                                     })
                                     console.log(res.data)});
                             //this.props.history.push('/viewpayment/'+this.props.match.params.id);
-                            window.location.replace('/cart/'+this.props.match.params.id);
+                            window.location.replace('/paymentViewtable/');
                
         }else{
              alert('Enter valid Payment Amount...');
@@ -187,7 +187,7 @@ export default  class CusAddPayment extends  Component{
                                 </div>
                             </div>
                          
-                            </form>
+                           
                             <table>
                                 <tr>
                                     <td>
@@ -198,6 +198,7 @@ export default  class CusAddPayment extends  Component{
                                     </td>
                                 </tr>
                             </table>
+                            </form>
                         </div>  
                         <Footer/>
                    </div>

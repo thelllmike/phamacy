@@ -192,12 +192,12 @@ export default  class CusAddPayment extends  Component{
                                 </div>
                             </div>
                         
-                            </form>
+                           
 
                             
                             <button type="submit" className='give'>Pay</button>
                           <button className='view'><a href = {"/paymentViewtable"} class="link1">View Payment</a></button>
-                           
+                          </form>
                         </div>
                         <Footer />
                     </div>

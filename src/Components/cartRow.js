@@ -32,9 +32,7 @@ class TableRow extends Component {
                <td>
                    {this.props.obj.total}
                </td>
-               <td>
-                   {this.props.obj.status}
-               </td>
+             
            
                 <td>
                    {/* <Link to={"/editOder/"+this.props.obj._id} className="btn btn-success">edit</Link> */}
