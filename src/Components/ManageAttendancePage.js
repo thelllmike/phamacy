@@ -26,6 +26,11 @@ export default class ManageAttendancePage extends Component {
         this.onChangeSearch = this.onChangeSearch.bind(this);
     }
 
+    getAttendanceCount(status) {
+        return this.state.attendance.filter((attendance) => attendance.status === status).length;
+      }
+      
+
     onChangeSearch(e) {
         this.setState({
             search: e.target.value,
@@ -80,6 +85,9 @@ export default class ManageAttendancePage extends Component {
 
 
     render() {
+         const presentCount = this.getAttendanceCount("Done");
+         const absentCount = this.getAttendanceCount("pending");
+      
         return (
             <div>
                 <div className="header3">
@@ -131,11 +139,11 @@ export default class ManageAttendancePage extends Component {
                         <tr>
                             <td>
                                 <p>Attendance Today</p>
-                                <p>20</p>
+                                <p>{presentCount}</p>
                             </td>
                             <td>
                                 <p>Absent</p>
-                                <p>2</p>
+                                <p>{absentCount}</p>
                             </td>
                         </tr>
                     </table>
