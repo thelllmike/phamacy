@@ -21,6 +21,10 @@ export default class taskHomePage extends Component {
 
          this.onChangeSearch = this.onChangeSearch.bind(this);
     }
+    getAttendanceCount(status) {
+        return this.state.task.filter((task) => task.status === status).length;
+      }
+      
 
     onChangeSearch(e){
         this.setState( {
@@ -54,6 +58,10 @@ export default class taskHomePage extends Component {
 
 
 	render() {
+
+        const completeCount = this.getAttendanceCount("Done");
+        const allocateCount = this.getAttendanceCount("pending");
+
 		return (
             <>
             <div className="header4">
@@ -105,11 +113,11 @@ export default class taskHomePage extends Component {
                             <tr>
                                 <td>
                                     <p>Today Allocated Tasks</p>
-                                    <p>20</p>
+                                    <p>{allocateCount}</p>
                                  </td>
                                  <td>
                                     <p>Completed Tasks</p>
-                                    <p>2</p>
+                                    <p>{completeCount}</p>
                                  </td>
                                  {/* <td>
                                     <p>Remaining Task</p>
