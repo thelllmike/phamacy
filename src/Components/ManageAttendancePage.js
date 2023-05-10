@@ -68,9 +68,9 @@ export default class ManageAttendancePage extends Component {
         doc.setFontSize(15);
 
         const title = "attendance Report";
-        const headers = [["staffid", "name", "status"]];
+        const headers = [["staffid", "name", "status", "day"]];
 
-        const data = this.state.attendance.map(elt => [elt.staffid, elt.name, elt.status]);
+        const data = this.state.attendance.map(elt => [elt.staffid, elt.name, elt.status, elt.day]);
 
         let content = {
             startY: 50,
@@ -147,23 +147,7 @@ export default class ManageAttendancePage extends Component {
                             </td>
                         </tr>
                     </table>
-                    {/* <form onSubmit={this.onSubmit}>
-                        <table className="table2">
-                            <tr>
-                                <td>Search By Member Name</td>
-                                 <td> 
-                                    <input type="text" placeholder="Search..."  required value={this.state.search} onChange={this.onChangeSearch} />
-                                </td>
-                                 <td> 
-                                    <button type="submit" className="search">
-                                        <a href={"/searchAttendance/" + this.state.search} className="link">Search</a>
-                                    </button>
-                                </td>
-
-                            </tr>
-
-                        </table>
-                    </form> */}
+                   
 
                     
 					<form onSubmit={this.onSubmit}>

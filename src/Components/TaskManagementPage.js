@@ -25,6 +25,11 @@ export default class taskHomePage extends Component {
 		});
 	}
 
+	getAttendanceCount(status) {
+        return this.state.task.filter((task) => task.status === status).length;
+      }
+      
+
 	componentDidMount() {
 		// alert('email is ' +this.props.match.params.id);
 		axios
@@ -72,6 +77,8 @@ export default class taskHomePage extends Component {
 	};
 
 	render() {
+		const completeCount = this.getAttendanceCount("Done");
+        const pendingCount = this.getAttendanceCount("pending");
 		return (
 			<div className="root">
 				<div className="header4">
@@ -122,17 +129,17 @@ export default class taskHomePage extends Component {
 					<div className='row-frm'>
 						<table className='table1'>
 							<tr>
-								<td>
+								{/* <td>
 									<p>Today Allocated Task</p>
 									<p>20</p>
-								</td>
+								</td> */}
 								<td>
 									<p>Completed Task</p>
-									<p>2</p>
+									<p>{completeCount}</p>
 								</td>
 								<td>
 									<p>Remaining Task</p>
-									<p>18</p>
+									<p>{pendingCount}</p>
 								</td>
 							</tr>
 						</table>

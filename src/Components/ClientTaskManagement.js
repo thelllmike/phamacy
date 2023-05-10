@@ -119,10 +119,7 @@ export default class taskHomePage extends Component {
                                     <p>Completed Tasks</p>
                                     <p>{completeCount}</p>
                                  </td>
-                                 {/* <td>
-                                    <p>Remaining Task</p>
-                                    <p>18</p>
-                                 </td> */}
+                              
                             </tr> 
                         </table>   
                     
@@ -131,7 +128,7 @@ export default class taskHomePage extends Component {
                    <h1><p className="ptag">Today Allocated Tasks</p> </h1>     
                             
                         </table>
-                        {/* <div className='ProductHomePage'> */}
+                      
                       
                     
                         <table className='table table-striped table2' style={{ marginTop: 20 }}>
@@ -145,17 +142,7 @@ export default class taskHomePage extends Component {
                             </tr>
                             {this.tabRow()}
                         </table>
-                        {/* </div> */}
-                        {/* <button className="addtask" >Add Task</button> */}
-                        {/* <button className="addtask" type="submit" >  <a href={"/taskallocationpage"} >Add Task</a></button> */}
-                        {/* <table className="table4">
-                            <tr>
-                                <td>Generate Task Report</td>
-                                <td>
-                                    <button >Task Report</button>
-                                </td>
-                            </tr>
-                        </table>  */}
+                       
 
 					
 				</div>

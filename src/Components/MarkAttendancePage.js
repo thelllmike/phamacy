@@ -15,6 +15,10 @@ export default class MarkAttendancePage extends Component{
         this.onChangename = this.onChangename.bind(this);
          this.onChangeday = this.onChangeday.bind(this);
         this.onChangeemail = this.onChangeemail.bind(this);
+
+        const today = new Date();
+        const formattedDate = today.toISOString().slice(0, 10);
+
       
         this.onSubmit = this.onSubmit.bind(this);
 
@@ -22,8 +26,9 @@ export default class MarkAttendancePage extends Component{
             staffid: '',
             name: '',
             email:'',
-            day:'',
-            status:''
+            day:formattedDate,
+            status:'',
+            
         
         }
     }
@@ -166,7 +171,7 @@ export default class MarkAttendancePage extends Component{
                             <td>Day</td>
                         </tr>
                         <tr>
-                            <td><input type="date" required value={this.state.day} onChange = {this.onChangeday}/></td>
+                            <td><input type="date" readOnly required value={this.state.day} onChange = {this.onChangeday}/></td>
                         </tr> 
                         
                         <tr>

@@ -19,6 +19,9 @@ export default class ProductHomePage extends Component {
 		this.state.Station = this.props.match.params.id;
 
 		this.onChangeSearch = this.onChangeSearch.bind(this);
+		const today = new Date();
+ 		 const formattedDate = today.toISOString().slice(0, 10);
+		//   let day = formattedDate;
 	}
 
 	onChangeSearch(e) {
@@ -50,9 +53,12 @@ export default class ProductHomePage extends Component {
 	}
 
 
-
+	
+	
 
 	render() {
+		// const day = formattedDate;
+		
 		return (
 			<>
 		<div className="header2">
@@ -67,11 +73,13 @@ export default class ProductHomePage extends Component {
 							<a href='/producthomepage'>Product</a>
 						</div>
 					</div>
-					<div className='component-name farmer'>
+					{/* <a href={"/pendingpayment/" + pending}>Pending</a> */}
+					<div className='component-name dashboard'>
 						<div className='text'>
-							<a href='/manageattendancepage'> Attendance</a>
+							<a href="/manageattendancepage/" >manage attendance</a>
 						</div>
 					</div>
+					
 					<div className='component-name vendor'>
 						<div className='text'>
 							<a href='/'> Payment</a>
@@ -160,10 +168,6 @@ export default class ProductHomePage extends Component {
 						</table>
 
 					</div>
-
-
-
-
 
 
 				</div>

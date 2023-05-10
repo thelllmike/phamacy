@@ -31,6 +31,11 @@ export default class ClientAttendance extends Component {
         });
     }
 
+    getAttendanceCount(status) {
+        return this.state.attendance.filter((attendance) => attendance.status === status).length;
+      }
+      
+
     componentDidMount() {
 
         axios.get('http://localhost:4000/attendance/getall/')
@@ -51,34 +56,11 @@ export default class ClientAttendance extends Component {
 
     }
 
-    // exportPDF = () => {
-    //     const unit = "pt";
-    //     const size = "A4"; // Use A1, A2, A3 or A4
-    //     const orientation = "portrait"; // portrait or landscape
-
-    //     const marginLeft = 40;
-    //     const doc = new jsPDF(orientation, unit, size);
-
-    //     doc.setFontSize(15);
-
-    //     const title = "attendance Report";
-    //     const headers = [["staffid", "name", "status"]];
-
-    //     const data = this.state.attendance.map(elt => [elt.staffid, elt.name, elt.status]);
-
-    //     let content = {
-    //         startY: 50,
-    //         head: headers,
-    //         body: data
-    //     };
-
-    //     doc.text(title, marginLeft, 40);
-    //     doc.autoTable(content);
-    //     doc.save("report.pdf")
-    // }
-
+  
 
     render() {
+        const presentCount = this.getAttendanceCount("Done");
+        const absentCount = this.getAttendanceCount("pending");
         return (
         <>
         <div className="header3">
@@ -132,31 +114,15 @@ export default class ClientAttendance extends Component {
                         <tr>
                             <td>
                                 <p>Attendance Today</p>
-                                <p>20</p>
+                                <p>{presentCount}</p>
                             </td>
                             <td>
                                 <p>Absent</p>
-                                <p>2</p>
+                                <p>{absentCount}</p>
                             </td>
                         </tr>
                     </table>
-                    {/* <form onSubmit={this.onSubmit}>
-                        <table className="table2">
-                            <tr>
-                                <td>Search Member name</td>
-                                <td>
-                                    <input type="text" required value={this.state.search} onChange={this.onChangeSearch} />
-                                </td>
-                                <td>
-                                    <button type="submit" className="search">
-                                        <a href={"/searchAttendance/" + this.state.search} className="link">Search</a>
-                                    </button>
-                                </td>
-
-                            </tr>
-
-                        </table>
-                    </form> */}
+                  
 
                 <table className="table2">
                  <tr ><td>Didn't Mark Attendance Today ?</td>

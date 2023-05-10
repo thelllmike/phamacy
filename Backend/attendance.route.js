@@ -73,6 +73,25 @@ attendanceRoutes.route('/search/:pathParam1?').get(function (req, res){
 });
 
 
+//today
+attendanceRoutes.route('/today/:pathParam1?').get(function (req, res){
+    let search = req.params.pathParam1;
+    // let email = req.params.pathParam2;
+    console.log("your search is "+search);
+
+    // Orders.find({$and:[{date : search},{email : email}]},function (err,srch){
+        Attendance.find({$and:[{$or: [{day: search}]}]},function (err,srch){ 
+        if(err)
+            console.log(err);
+        else{
+            res.json(srch)
+        }
+    });
+
+});
+
+
+
 //get all details
 // Define a route for getting all customers
 attendanceRoutes.route('/getall').get(function(req, res) {
