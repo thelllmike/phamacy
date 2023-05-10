@@ -238,6 +238,47 @@ attendanceRoutes.route('/taskstatus/:id').get(function (req,res){
 });
 
 
+
+//  attendanceRoutes.route('/login').post(function (req, res){
+//      let staffid = req.body.staffid;
+//      let taskNo = req.body.taskNo
+//      Taskallocate.findOne({$and:[{staffid : staffid},{taskNo : taskNo}]})
+//          .then(taskallocate => {
+//              if(taskallocate){           
+//                  res.status(200).send({
+//                      message: "Successful Login"
+//                  });
+//              }
+//              else{
+//                  res.status(200).send({
+//                      message: "User Not Found"
+//                  });
+//              }
+//          })
+//  });
+
+
+attendanceRoutes.route('/login').post(function (req, res){
+    let staffid = req.body.staffid;
+   
+    Taskallocate.findOne({staffid : staffid})
+        .then(taskallocate => {
+            if(taskallocate){           
+                res.status(200).send({
+                    message: "Successful Login"
+                });
+            }
+            else{
+                res.status(200).send({
+                    message: "User Not Found"
+                });
+            }
+        })
+});
+
+
+
+
 // ***************************************************************************************
 
 module.exports = attendanceRoutes;

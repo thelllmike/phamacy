@@ -47,20 +47,20 @@ export default  class Login extends  Component{
      
          }
          else {
-            //  axios.post('http://localhost:4000//login',object)
-            //      .then(res => {
-            //          if(res.data.message === "Successful Login"){
-            //              // alert(res.data.message)
-            //              // alert(Email)
-            //              this.props.history.push('/Homepage/'+Email);
-            //            // this.props.history.push('/');
-            //          }
-            //          else{
-            //              // alert(res.data.message)
-            //              this.props.history.push('/login');
-            //          }
-     
-            //      });
+              axios.post('http://localhost:4000/login',object)
+                  .then(res => {
+                      if(res.data.message === "Successful Login"){
+                          // alert(res.data.message)
+                          // alert(Email)
+                          this.props.history.push('/Homepage/'+Email);
+                        // this.props.history.push('/');
+                      }
+                      else{
+                          // alert(res.data.message)
+                          this.props.history.push('/login');
+                      }
+
+                  });
          }
          
 
@@ -80,7 +80,7 @@ export default  class Login extends  Component{
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <label>Username :</label>
-                            <input type ="text" className="form-control" placeholder="IT12345678" value={this.state.username} onChange = {this.onChangeUsername}/>
+                            <input type ="text" className="form-control" placeholder="staf ID" value={this.state.username} onChange = {this.onChangeUsername}/>
                         </div>
                         <div className="form-group">
                             <label>Password :</label>

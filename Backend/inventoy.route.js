@@ -40,10 +40,11 @@ inventoryRoutes.route('/update/:id').post(function (req,res){
             res.status(404).send("Data is not found??");
         else{
             inventory.pName = req.body.pName;
-            inventory.stock = req.body.stock;
-            inventory.pCode = req.body.pCode;
-            inventory.cost = req.body.cost;
-            inventory.vender = req.body.vender;
+            inventory.price = req.body.price;
+            inventory.category = req.body.category;
+            inventory.pNo = req.body.pNo;
+            inventory.qty = req.body.qty;
+            inventory.description = req.body.description;
          
 
 

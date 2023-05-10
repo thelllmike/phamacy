@@ -113,7 +113,7 @@ export default class ClientAttendance extends Component {
                     <table className="table1">
                         <tr>
                             <td>
-                                <p>Attendance Today</p>
+                                <p>Attendance Monthly</p>
                                 <p>{presentCount}</p>
                             </td>
                             <td>
