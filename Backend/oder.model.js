@@ -20,6 +20,10 @@ OderInventory = new Schema({
     status: {
         type: String
     }
+    ,
+    price: {
+        type: String
+    }
 
  },
   {

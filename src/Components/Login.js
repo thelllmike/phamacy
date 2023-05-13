@@ -1,13 +1,13 @@
 import  React, {Component} from 'react';
 import axios from 'axios';
-import {Button, Form, FormControl, Navbar} from "react-bootstrap";
+
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import Footer from "../Components/Footer";
+// import Footer from "../Components/Footer";
 
 
-import logo from "../logo.png";
-import './css/LandingPage.css';
-// import Footer from './footer'
+
+// import './css/LandingPage.css';
+
 
 
 export default  class Login extends  Component{
@@ -15,11 +15,13 @@ export default  class Login extends  Component{
         super(props);
         this.onChangeUsername = this.onChangeUsername.bind(this);
         this.onChangePassword = this.onChangePassword.bind(this);
+         this.onChangestaffid = this.onChangestaffid.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             username:'',
-            password:''
+            password:'',
+            staffid:''
         }
     }
     onChangeUsername(e){
@@ -32,36 +34,43 @@ export default  class Login extends  Component{
             password: e.target.value
         });
     }
+
+     onChangestaffid(e){
+         this.setState( {
+             staffid: e.target.value
+         });
+     }
     onSubmit(e){
         e.preventDefault();
-        const Email = this.state.email;
+        const staffid = this.state.staffid;
         let object = {
             email : this.state.email,
-            password : this.state.password
+            password : this.state.password,
+           
         };
 
 
         if ((this.state.email === "admin@gmail.com") && (this.state.password === "admin123")) {
             //  const Station = "Hotel";
-              this.props.history.push('/HomepageAdmin/'+Email);
+              this.props.history.push('/HomepageAdmin/'+staffid);
      
          }
-         else {
-              axios.post('http://localhost:4000/login',object)
-                  .then(res => {
-                      if(res.data.message === "Successful Login"){
-                          // alert(res.data.message)
-                          // alert(Email)
-                          this.props.history.push('/Homepage/'+Email);
-                        // this.props.history.push('/');
-                      }
-                      else{
-                          // alert(res.data.message)
-                          this.props.history.push('/login');
-                      }
+        //  else {
+        //       axios.post('http://localhost:4000/login',object)
+        //           .then(res => {
+        //               if(res.data.message === "Successful Login"){
+        //                   // alert(res.data.message)
+        //                   // alert(Email)
+        //                   this.props.history.push('/Homepage/'+staffid);
+        //                 // this.props.history.push('/');
+        //               }
+        //               else{
+        //                   // alert(res.data.message)
+        //                   this.props.history.push('/login');
+        //               }
 
-                  });
-         }
+        //           });
+        //  }
          
 
         this.setState({
@@ -80,7 +89,11 @@ export default  class Login extends  Component{
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <label>Username :</label>
-                            <input type ="text" className="form-control" placeholder="staf ID" value={this.state.username} onChange = {this.onChangeUsername}/>
+                            <input type ="text" className="form-control" placeholder="username" value={this.state.username} onChange = {this.onChangeUsername}/>
+                        </div>
+                        <div className="form-group">
+                            <label>Staff ID :</label>
+                            <input type ="text" className="form-control" placeholder="username" required value={this.state.staffid} onChange = {this.onChangestaffid} />
                         </div>
                         <div className="form-group">
                             <label>Password :</label>
@@ -97,7 +110,7 @@ export default  class Login extends  Component{
                 <div>
                     <hr className="shadow-lg card-footer"/>
                 </div>
-                <Footer/>
+                {/* <Footer/> */}
             </div>
         )
     }

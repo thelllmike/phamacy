@@ -57,6 +57,7 @@ import Footer from "../Components/Footer";
                     pName: res.data.pName,
                     category: res.data.category,
                     pieces: res.data.pieces,
+                    price: res.data.price,
                   
                    
                 });
@@ -106,6 +107,7 @@ import Footer from "../Components/Footer";
             qty : this.state.qty,
             total : this.state.total,
             status : this.state.status,
+            price : this.state.price,
           
            
         };

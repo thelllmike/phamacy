@@ -29,7 +29,7 @@ import cart from "./Components/cart";
 import ProductOder from "./Components/ProductOder";
 import ClientTaskManagement from "./Components/ClientTaskManagement";
  import ClientAttendance from "./Components/ClientAttendance";
- //import Login from "./Components/Login";
+ import Login from "./Components/Login";
  import PageNotFound from "./Components/PageNotFound";
 
 class App extends Component {
@@ -40,7 +40,7 @@ class App extends Component {
 				<Router>
 					<Switch>
 						
-						{/* <Route pat exact ='/Login' component={Login} /> */}
+				 {/* <Route path  ='/Login' component={Login} />  */}
 						<Route path exact='/producthomepage' component={ProductHomePage} />
 						<Route path='/addproductform' component={AddProdcutForm}/>
 						<Route path='/editproductform/:id' component={EditProductForm}/>
@@ -64,6 +64,7 @@ class App extends Component {
 						<Route path='/ProductOder/:id' component={ProductOder}/>
 						<Route path='/clienttaskpage' component={ClientTaskManagement}/>
 						<Route path='/attendence' component={ClientAttendance}/>
+						<Route path='/Login' component={Login}/>
 						{/* <Route path='/PageNotFound' component={PageNotFound}/>
 
 						<Redirect from='*' to='/PageNotFound' /> */}

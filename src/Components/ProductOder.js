@@ -127,8 +127,9 @@ import Footer from "../Components/Footer";
         const obj = {
             pName : this.state.pName,
             category : this.state.category,
-            qty : this.state.qty,
+            pieces : this.state.pieces,
             total : this.state.total,
+            price : this.state.price,
             status : this.state.status,
           
            
